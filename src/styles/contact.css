@@ -1,0 +1,38 @@
+.contact {
+  padding-top: 5rem;
+}
+.contact_card_div {
+  display: flex;
+}
+
+.contact_card {
+  display: flex;
+  width: 22rem;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+  background: rgb(87, 134, 195, 0.2);
+  border-radius: 5px;
+  padding: 0.5rem 0.2rem;
+  margin: 1rem auto;
+  transition: all 0.4s ease;
+}
+.contact_card span {
+  font-size: 2rem;
+  margin: 10px;
+}
+@media screen and (max-width: 767px) {
+  .contact_card_div {
+    flex-direction: column;
+  }
+  .contact_card {
+    width: 90%;
+    height: 5rem;
+  }
+  .contact_card span {
+    font-size: 1rem;
+  }
+  .contact_card h2 {
+    font-size: 1.2rem;
+  }
+}

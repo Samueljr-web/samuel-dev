@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  color: #000;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.footer_social_icons {
+  transition: 0.4;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  .copyright {
+    text-align: right;
+  }
+}

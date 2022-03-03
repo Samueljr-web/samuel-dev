@@ -47,22 +47,38 @@ function Home() {
       </div>
       <div className="hero_social_icons">
         <i className="icon">
-          <a href="/">
+          <a
+            href="https://twitter.com/Samueljrweb"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaTwitterSquare />
           </a>
         </i>
         <i className="icon">
-          <a href="/">
+          <a
+            href="https://instagram.com/Samueljrweb"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaInstagramSquare />
           </a>
         </i>
         <i className="icon">
-          <a href="/">
+          <a
+            href="https://github.com/Samueljr-web"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaGithubSquare />
           </a>
         </i>
         <i className="icon">
-          <a href="/">
+          <a
+            href="https://linkedin.com/Samueljrweb"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
         </i>

@@ -33,7 +33,12 @@ function Projects() {
               <h2>{p.name}</h2>
               <p>{p.description}</p>
               <div className="btn-div">
-                <a href={p.link} className="button">
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="button"
+                >
                   Preview
                 </a>
               </div>

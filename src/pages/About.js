@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../styles/about.css";
 import "../styles/button.css";
-import { skillsData } from "../data/data";
+import { skillsData, ServicesData } from "../data/data";
 import { Footer } from "../components/index";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,15 +20,15 @@ function About() {
         start: "top 90%",
       },
     });
-    gsap.from(".skills_icon", {
+    gsap.from(".service_card", {
       opacity: 0,
       duration: 0.3,
       delay: 1,
       stagger: {
-        each: 0.3,
+        each: 1,
       },
       scrollTrigger: {
-        trigger: ".skills_icon",
+        trigger: ".service_card",
         start: "top 90%",
       },
     });
@@ -43,7 +43,7 @@ function About() {
           when my bro introduced me to it, i started by learning python by
           building small project so as to understand it. In 2021 i joined a
           group of people where we challenged our self to learn and build new
-          things. i am open for projects and collaboration hit my dm.
+          things. i am open for projects and collaboration.
         </p>
         <div className="btn-div">
           <a href="/" className="button">
@@ -51,9 +51,27 @@ function About() {
           </a>
         </div>
       </div>
+      <div className="service_section">
+        <h2>Services</h2>
+        <section>
+          <div className="service">
+            {ServicesData.map((service) => {
+              return (
+                <div key={service.id} className="service_card">
+                  <img src={service.img} alt="icon" className="service_icon" />
+                  <div className="service_content">
+                    <h2>{service.name}</h2>
+                    <p>{service.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </div>
       <div className="skills_section">
         <h2>My Skills</h2>
-        <p>Tools and technology i work with &raquo;</p>
+        <p>Tools and technologies i work with &raquo;</p>
         <section>
           <div className="skills">
             {skillsData.map((s) => {

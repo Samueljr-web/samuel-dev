@@ -71,7 +71,7 @@
 @media screen and (max-width: 778px) {
   .project-card-main{
     padding: 0.5rem 1rem; 
-    width: 16rem;
+    width: 20rem;
     height: 13rem;
     margin: 1rem auto;
     background: var(--secondary-color);
@@ -88,8 +88,8 @@
 @media screen and (max-width: 500px) {
   .project-card-main{
     padding: 0.1rem 1rem; 
-    width: 20rem;
-    height: 12rem;
+    width: 18rem;
+    height: 14rem;
     margin: 1rem auto;
     background: var(--secondary-color);
  }

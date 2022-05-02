@@ -11,7 +11,7 @@
   height: 80px;
   top: 10%;
   left: 9%;
-  z-index: 99;
+  z-index: 999;
   cursor: pointer;
   transition: all 0.2s ease;
 }

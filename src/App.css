@@ -7,12 +7,13 @@
   box-sizing: border-box;
   color: #fff;
 }
-
-html {
-  scroll-behavior: smooth;
+:root{
+  --primary-color: #777778;
+  --secondary-color: #16161A;
 }
-body {
-  background: #101010;
+body, html {
+  scroll-behavior: smooth;
+  background: #101011;
   font-family: "Poppins", sans-serif;
 }
 #heading-title {

@@ -7,32 +7,38 @@
 
 .contact_card {
   display: flex;
-  width: 22rem;
+  width: 28rem;
   height: 6rem;
   align-items: center;
   justify-content: center;
-  background: rgb(87, 134, 195, 0.2);
-  border-radius: 5px;
-  padding: 0.5rem 0.2rem;
+  background: var(--secondary-color);
+  padding: 1rem 0.5rem;
   margin: 1rem auto;
   transition: all 0.4s ease;
 }
 .contact_card span {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 10px;
+  
 }
-@media screen and (max-width: 767px) {
+.contact_card *{
+  color: var(--primary-color);
+}
+@media screen and (max-width: 917px){
   .contact_card_div {
     flex-direction: column;
   }
   .contact_card {
-    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
     height: 5rem;
   }
   .contact_card span {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .contact_card h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

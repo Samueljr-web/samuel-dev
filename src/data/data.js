@@ -1,10 +1,4 @@
-import Fdma from "../assets/fdma.png";
-import P2 from "../assets/portfoliov2.png";
-import P1 from "../assets/portfoliov1.png";
-import Todoapp from "../assets/todoapp.png";
-import Twitter from "../assets/twitterclone.png";
-import Uty from "../assets/uty.png";
-import Ui from "../assets/ui.png";
+import Debug from "../assets/service-icon.svg";
 import Webdev from "../assets/webdev.png";
 import Deployment from "../assets/deployment.png";
 import Html from "../assets/skillsicon/html.png";
@@ -19,49 +13,69 @@ import Figma from "../assets/skillsicon/figma.svg";
 export const projectsData = [
   {
     id: "1",
-    name: "Personal Website v2",
-    description:
-      "This is the website you are currently viewing it was made with react.js & GSAP.",
-    image: P2,
+    name: "Portfolio Website",
+    description: "This is the website you are currently viewing",
+    stack: "Reactjs + Gsap ",
     link: "https://adeyemisamuel.com",
+    github: "",
   },
   {
     id: "2",
     name: "F.D.M.A",
     description:
-      "FDMA[FAVOURED DESTINIES MONTESSORI ACADEMY] this is my school website and my fisrt next.js project. I really enjoyed working on this project",
-    image: Fdma,
+      " This is a school website and my fisrt next.js project. I really enjoyed working on this project",
+    stack: "Nextjs + Tailwindcss + AOS",
     link: "https://fdma-website.vercel.app",
+    github: "",
   },
   {
     id: "3",
     name: "Twitter Clone",
     description:
       " This was my first Reactjs project/challenge i hopped on, i redesigned twitter.",
-    image: Twitter,
+    stack: "Reactjs + Sass",
     link: "https://react-twitterclone.netlify.app/",
+    github: "",
   },
   {
     id: "4",
     name: "Todo App",
     description: "This is a todo app and it was made javascript.",
-    image: Todoapp,
+    stack: "Javacript + Css",
     link: "https://youthful-lumiere-d7d69b.netlify.app/",
+    github: "",
   },
   {
     id: "5",
     name: "US TO YOU- Landing page",
-    description:
-      "I decided to create a landing page so as to improve my css skills and i came up with this idea.",
-    image: Uty,
+    description: "I created a landing page for a delivery service",
+    stack: "Javacript + Css",
     link: "https://uty.netlify.app/#",
+    github: "",
   },
   {
     id: "6",
     name: "Personal Website v1",
     description: "This was my former personal/portfolio website.",
-    image: P1,
+    stack: "Reactjs + Css",
     link: "https://devsamuel.vercel.app/",
+    github: "",
+  },
+  {
+    id: "7",
+    name: "Food City",
+    description: "I contributed & Designed the home page of this project",
+    stack: "Reactjs + Css",
+    link: "https://restaurant-website-silk.vercel.app",
+    github: "",
+  },
+  {
+    id: "8",
+    name: "CV ",
+    description: "I Designed a cv with css",
+    stack: "Reactjs + Css",
+    link: "https://sh-cv.netlify.app",
+    github: "",
   },
 ];
 
@@ -114,19 +128,20 @@ export const ServicesData = [
     name: "Web Development",
     img: Webdev,
     description:
-      "I develop scalable webapplications with aesthetic user interfaces.",
+      "I build scalable web applications with aesthetic user interfaces.",
   },
   {
     id: 2,
     name: "Deployment",
     img: Deployment,
     description:
-      "I deploy websites and webapps with  Netlify, Vercel, and Heroku.",
+      "I deploy my projects/websites with  Netlify, Vercel, and Heroku.",
   },
   {
     id: 3,
-    name: "Ui x Ux Design",
-    img: Ui,
-    description: "I build aesthetic user interfaces with figma.",
+    name: "Debugging",
+    img: Debug,
+    description:
+      "This is process of detecting and removing of existing and potential errors in a code that can cause it to behave unexpectedly or crash.",
   },
 ];

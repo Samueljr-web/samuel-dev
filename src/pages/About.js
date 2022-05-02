@@ -39,11 +39,8 @@ function About() {
       <div className="about_section">
         <p>
           Hello, i'm Samuel Adeyemi am a frontend developer with strong passion
-          in programming i have 2years+ of experience, i started coding in 2019
-          when my bro introduced me to it, i started by learning python by
-          building small project so as to understand it. In 2021 i joined a
-          group of people where we challenged our self to learn and build new
-          things. i am open for projects and collaboration.
+          in programming i have 2years+ of experience i am open for projects and
+          collaboration.
         </p>
         <div className="btn-div">
           <a href="/" className="button">

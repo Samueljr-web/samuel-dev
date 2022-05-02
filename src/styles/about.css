@@ -20,21 +20,21 @@
 .skills_card {
   display: flex;
   width: 15rem;
-  background: rgb(87, 134, 195, 0.2);
-  border-radius: 2px;
+  background: var(--secondary-color);
   padding: 1rem 2rem;
   margin: 1rem auto;
   transition: all 0.4s ease;
 }
 .skills_card:hover {
-  box-shadow: 0 3px rgb(87, 134, 195);
+  box-shadow: 0 2px rgb(87, 134, 195);
   transition: all 0.4s ease;
 }
 .skills_card h3 {
   margin-left: 1rem;
+  color: var(--primary-color);
 }
 .icon_wrapper {
-  box-shadow: 2px 0 5px rgb(87, 134, 195);
+  box-shadow: 1px 0 3px rgb(87, 134, 195);
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -56,16 +56,16 @@
 .service_card {
   display: flex;
   flex-direction: column;
-  width: 23rem;
-  height: 20rem;
-  background: rgb(87, 134, 195, 0.2);
-  border-radius: 5px;
+  width: 20rem;
+  height: 19rem;
+  background: var(--secondary-color);
   padding: 1rem 2rem;
   margin: 1rem auto;
   transition: all 0.4s ease;
 }
 .service_card:hover {
   transform: scale(1.1);
+  border: 1px solid #ffffff;
 }
 .service_icon {
   width: 5rem;
@@ -96,6 +96,7 @@
     grid-template-columns: repeat(1, 2fr);
   }
   .service_card {
-    width: 15rem;
+    width: 18rem;
+    height: 20rem;
   }
 }

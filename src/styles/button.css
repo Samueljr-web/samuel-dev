@@ -1,10 +1,9 @@
 .button {
   padding: 8px 30px;
-  background: transparent;
+  background: #16161A;
   text-decoration: none;
   text-align: left;
-  border-radius: 5px;
-  border: 2px solid #5786c3;
+  border: 1px solid #5786c3;
   transition: 0.3s;
 }
 .button:hover {

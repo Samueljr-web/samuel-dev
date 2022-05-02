@@ -1,7 +1,7 @@
 .home {
   padding-top: 8rem;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero_section {
@@ -14,30 +14,28 @@
   margin-top: 5rem;
   transition: 0.5s;
 }
-h2 strong {
-  font-size: 3rem;
-}
-
 .hero_content h2 {
   color: #fff;
-  font-size: 1.9rem;
+  font-size: 1.95rem;
 }
 .hero_content h2 b {
   color: #5786c3;
-  font-size: 2rem;
   font-weight: bold;
 }
 .hero_content h2 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   transition: 0.5s;
+  color: var(--primary-color);
+  margin-top: 10px;
 }
 .hero_image {
   margin-right: 2rem;
   margin-top: 2.5rem;
-  width: 30rem;
+  width: 27rem;
 }
 .hero_image img {
   width: 100%;
+  border-radius: 50px;
 }
 .hero_social_icons {
   position: absolute;
@@ -45,11 +43,14 @@ h2 strong {
   left: 8%;
   transition: 0.4;
 }
-.icon a {
-  color: #fff;
+.icon * {
+  color: var(--primary-color);
   font-size: 2rem;
   cursor: pointer;
-  margin: 1rem;
+  margin: 0.5rem;
+}
+.icon *:hover{
+  color: #ffffff;
 }
 @media screen and (max-width: 1300px) {
   .hero_content {
@@ -64,7 +65,7 @@ h2 strong {
     margin-right: 0;
   }
   .hero_content h2 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .hero_social_icons {
     left: 1%;
@@ -73,24 +74,34 @@ h2 strong {
 }
 @media screen and (max-width: 853px) {
   .hero_section {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     transition: 0.3s;
   }
   .hero_content {
-    margin-left: 1rem;
+    margin:0 1rem;
   }
+  .hero_content *{
+    text-align: center;
+ }
+ 
   .hero_content h2 p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .hero_image {
-    display: none;
-    /* margin-top: -1rem !important; */
+    margin-top: -1rem !important;
+    width: 12rem;
+    height: 12rem;
+  }
+  .hero_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70% 50% 50% 50%/50% 15% 50%;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
   }
   .hero_content h2 {
     color: #fff;
-    font-size: 1.5rem;
-  }
-  h2 strong {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }

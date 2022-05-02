@@ -4,14 +4,22 @@ import { gsap } from "gsap";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
-function NavBar({ loader }) {
+function NavBar() {
   const [IsOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const handleIsOpen = () => {
     if (IsOpen) {
-      gsap.to(menuRef.current, 0.5, { opacity: 1, visibility: "visible" });
+      gsap.to(menuRef.current, 0.5, {
+        opacity: 0,
+        visibility: "hidden",
+        y: "-100%",
+      });
     } else {
-      gsap.to(menuRef.current, 0.5, { opacity: 0, visibility: "hidden" });
+      gsap.to(menuRef.current, 0.5, {
+        opacity: 1,
+        visibility: "visible",
+        y: "0",
+      });
     }
     setIsOpen(!IsOpen);
   };
@@ -22,39 +30,31 @@ function NavBar({ loader }) {
         <div className="nav_brand">
           <img src={logo} width={120} height={70} alt="logo" />
         </div>
-        <div className="bars" onClick={() => handleIsOpen()}>
-          <span className="bar"></span>
-          <span className="bar bar2"></span>
-          <span className="bar bar3"></span>
+        <div className="menubar" onClick={() => handleIsOpen()}>
+          <span className="menu-open-icon first-bar" />
+          <span className="menu-open-icon second-bar" />
+          <span className="menu-open-icon third-bar" />
         </div>
+
         <div className="navigation" ref={menuRef}>
-          <div className="nav_brand menu">
+          {/* <div className="nav_brand_">
             <img src={logo} width={120} height={70} alt="logo" />
+          </div> */}
+          <div className="close" onClick={() => handleIsOpen()}>
+            <span className="close-icon close-icon1" />
+            <span className="close-icon close-icon2" />
           </div>
-          <div className="close-icon" onClick={() => handleIsOpen()}>
-            <span className="close close1"></span>
-            <span className="close close2"></span>
-          </div>
-          <div className="navigation-links">
-            <Link to="/" className="link" onClick={() => handleIsOpen()}>
+          <div className="navigation-links" onClick={() => handleIsOpen()}>
+            <Link to="/" className="link">
               Home
             </Link>
-            <Link
-              to="/about"
-              className="link"
-              // onClick={() => (handleIsOpen ? loader() : handleIsOpen())}
-              onClick={() => handleIsOpen()}
-            >
+            <Link to="/about" className="link">
               About
             </Link>
-            <Link
-              to="/projects"
-              className="link"
-              onClick={() => handleIsOpen()}
-            >
+            <Link to="/projects" className="link">
               Projects
             </Link>
-            <Link to="/contact" className="link" onClick={() => handleIsOpen()}>
+            <Link to="/contact" className="link">
               Contact
             </Link>
           </div>

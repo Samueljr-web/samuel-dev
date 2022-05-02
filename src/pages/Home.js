@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaTwitterSquare,
 } from "react-icons/fa";
-import Me from "../assets/cartoon.png";
+import Me from "../assets/me.jpg";
 
 function Home() {
   const heroImageRef = useRef(null);
@@ -35,8 +35,8 @@ function Home() {
             <strong>Frontend Developer</strong>
             <br />
             <p>
-              i'm a Frontend Developer currently based in Abuja, Nigeria, i have
-              2years+ <br />
+              i'm a <span>Frontend Developer</span> currently based in Abuja,
+              Nigeria, i have 2years+ <br />
               experience of building aesthetic user interfaces.
             </p>
           </h2>

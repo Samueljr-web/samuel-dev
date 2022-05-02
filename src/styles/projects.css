@@ -1,51 +1,99 @@
 .projects {
   padding-top: 5rem;
 }
-.project_card_div {
+.project_card {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   margin-top: 3rem;
 }
-.project_card {
-  margin: 3rem auto;
-  width: 29rem;
-  height: 25rem;
+.project-card-main{
+   padding: 1rem 1rem; 
+   width: 23rem;
+   height: 14rem;
+   margin: 1rem auto;
+   background: var(--secondary-color);
+   transition: transform 0.1s ease;
+}
+.project-card-main:hover{
+  transform: scale(1.1);
+  border: 1px solid #ffffff;
+  transition: transform 0.1s ease;
+}
+.project_card_content {
+  width: 20rem;
+  height: 20rem;
   transition: all 0.3s;
 }
-.project_card h2 {
+.project_card_content h2 {
   font-weight: 700;
   font-family: cursive;
+  font-size: 1.3rem;
   margin-top: 1rem;
 }
-.project_card p {
+.project_card_content h4{
+  font-size: 1rem;
+}
+.project_card_content p {
   color: #fff;
   margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 .btn-div {
+  display: flex;
   margin-top: 1rem;
 }
-.image {
-  width: 100%;
+.btn-div span{
+  margin-right: 1rem;
+}
+.live,
+.code{
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.btn-div span a small{
+  margin-left: 5px;
 }
 @media screen and (max-width: 1168px) {
-  .project_card {
+  .project-card-main{
+    padding: 1rem 1rem; 
     width: 23rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+ }
+  .project_card_content {
+    width: 20rem;
     height: 20rem;
     transition: all 0.3s;
   }
 }
 @media screen and (max-width: 778px) {
-  .project_card_div {
+  .project-card-main{
+    padding: 0.5rem 1rem; 
+    width: 21rem;
+    height: 13rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+ }
+  .project_card {
     grid-template-columns: 2fr;
   }
-  .project_card {
-    width: 30rem;
+  .project_card_content {
+    width: 20rem;
     height: 20rem;
     transition: all 0.3s;
   }
 }
 @media screen and (max-width: 500px) {
-  .project_card {
+  .project-card-main{
+    padding: 0.1rem 1rem; 
+    width: 20rem;
+    height: 12rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+ }
+  .project_card_content {
     width: 80%;
     height: 20rem;
     transition: all 0.3s;

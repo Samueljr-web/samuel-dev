@@ -31,7 +31,7 @@ export const projectsData = [
     id: "3",
     name: "Twitter Clone",
     description:
-      " This was my first Reactjs project/challenge i hopped on, i redesigned twitter.",
+      " This was my first Reactjs project/challenge i hopped on, i cloned twitter.",
     stack: "Reactjs + Sass",
     link: "https://react-twitterclone.netlify.app/",
     github: "",

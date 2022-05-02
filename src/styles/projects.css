@@ -40,18 +40,18 @@
 .project_card_content p {
   color: var(--primary-color);
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .bottom{
   position: absolute;
   bottom: 20px;
 }
 .btn-div {
-  display: flex;
+  display: flex;  margin-top: 0.1rem;
 }
 .btn-div span{
   margin-right: 1rem;
-   margin-top: 0.5rem;
+
 }
 .live,
 .code{
@@ -98,9 +98,9 @@
 }
 @media screen and (max-width: 500px) {
   .project-card-main{
-    padding: 0.9rem 1.5rem; 
+    padding: 0.2rem 1.5rem; 
     width: 18rem;
-    height: 12rem;
+    height: 11rem;
     margin: 1rem auto;
     background: var(--secondary-color);
  }
@@ -108,5 +108,11 @@
     width: fit-content;
     height: fit-content;
     transition: all 0.3s;
+  }
+  .project-card-main:hover{
+    transform: scale(1.07);
+  }
+  .bottom{
+    bottom: 10px;
   }
 }

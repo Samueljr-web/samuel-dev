@@ -22,8 +22,7 @@ export const projectsData = [
   {
     id: "2",
     name: "F.D.M.A",
-    description:
-      " This is a school website and my fisrt next.js project. I really enjoyed working on this project",
+    description: " This is a school website and my fisrt next.js project.",
     stack: "Nextjs + Tailwindcss + AOS",
     link: "https://fdma-website.vercel.app",
     github: "",

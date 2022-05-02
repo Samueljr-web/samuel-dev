@@ -71,7 +71,7 @@
 @media screen and (max-width: 778px) {
   .project-card-main{
     padding: 0.5rem 1rem; 
-    width: 21rem;
+    width: 16rem;
     height: 13rem;
     margin: 1rem auto;
     background: var(--secondary-color);
@@ -80,7 +80,7 @@
     grid-template-columns: 2fr;
   }
   .project_card_content {
-    width: 20rem;
+    width: 18rem;
     height: 20rem;
     transition: all 0.3s;
   }
@@ -94,7 +94,7 @@
     background: var(--secondary-color);
  }
   .project_card_content {
-    width: 80%;
+    width: 70%;
     height: 20rem;
     transition: all 0.3s;
   }

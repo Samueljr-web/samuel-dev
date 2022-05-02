@@ -24,7 +24,6 @@ function Projects() {
   return (
     <div className="projects">
       <h2 id="heading-title">Projects</h2>
-      <p id="project-title">Here are few projects i have worked on</p>
       <div className="project_card">
         {projectsData.map((p) => {
           return (
@@ -32,29 +31,31 @@ function Projects() {
               <div className="project_card_content">
                 <h2>{p.name}</h2>
                 <p>{p.description}</p>
-                <h4>{p.stack}</h4>
-                <div className="btn-div">
-                  <span>
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="live"
-                    >
-                      <FaEye /> <small>Live</small>
-                    </a>
-                  </span>
+                <div className="bottom">
+                  <h4>{p.stack}</h4>
+                  <div className="btn-div">
+                    <span>
+                      <a
+                        href={p.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="live"
+                      >
+                        <FaEye /> <small>Live</small>
+                      </a>
+                    </span>
 
-                  <span>
-                    <a
-                      href={p.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="code"
-                    >
-                      <FaCode /> <small>code</small>
-                    </a>
-                  </span>
+                    <span>
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="code"
+                      >
+                        <FaCode /> <small>code</small>
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

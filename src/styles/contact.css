@@ -24,7 +24,22 @@
 .contact_card *{
   color: var(--primary-color);
 }
-@media screen and (max-width: 917px){
+@media screen and (max-width: 1168px){
+  .contact_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 5rem;
+  }
+  .contact_card span {
+    font-size: 1.7rem;
+  }
+  .contact_card h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 517px){
   .contact_card_div {
     flex-direction: column;
   }
@@ -32,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     height: 5rem;
   }
   .contact_card span {

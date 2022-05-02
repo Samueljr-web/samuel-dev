@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: "5",
-    name: "US TO YOU- Landing page",
+    name: "UTY - Landing page",
     description: "I created a landing page for a delivery service",
     stack: "Javacript + Css",
     link: "https://uty.netlify.app/#",
@@ -62,7 +62,7 @@ export const projectsData = [
   },
   {
     id: "7",
-    name: "Food City",
+    name: "Food City ",
     description: "I contributed & Designed the home page of this project",
     stack: "Reactjs + Css",
     link: "https://restaurant-website-silk.vercel.app",

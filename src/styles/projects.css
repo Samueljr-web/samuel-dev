@@ -7,7 +7,8 @@
   margin-top: 3rem;
 }
 .project-card-main{
-   padding: 1rem 1rem; 
+  position: relative;
+   padding: 1rem 2.8rem; 
    width: 23rem;
    height: 14rem;
    margin: 1rem auto;
@@ -15,42 +16,52 @@
    transition: transform 0.1s ease;
 }
 .project-card-main:hover{
-  transform: scale(1.1);
+  transform: scale(1.08);
   border: 1px solid #ffffff;
   transition: transform 0.1s ease;
 }
 .project_card_content {
   width: 20rem;
-  height: 20rem;
+  height: 18rem;
   transition: all 0.3s;
 }
 .project_card_content h2 {
   font-weight: 700;
-  font-family: cursive;
   font-size: 1.3rem;
   margin-top: 1rem;
 }
 .project_card_content h4{
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  text-transform: uppercase;
 }
 .project_card_content p {
-  color: #fff;
-  margin-top: 0.5rem;
+  color: var(--primary-color);
   font-size: 0.9rem;
+  margin-top: 10px;
+}
+.bottom{
+  position: absolute;
+  bottom: 20px;
 }
 .btn-div {
   display: flex;
-  margin-top: 1rem;
 }
 .btn-div span{
   margin-right: 1rem;
+   margin-top: 0.5rem;
 }
 .live,
 .code{
-  color: var(--primary-color);
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+.live *,
+.code *{
+  color: var(--primary-color);
 }
 .btn-div span a small{
   margin-left: 5px;
@@ -68,11 +79,11 @@
     transition: all 0.3s;
   }
 }
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 852px) {
   .project-card-main{
     padding: 0.5rem 1rem; 
     width: 20rem;
-    height: 13rem;
+    height: 12rem;
     margin: 1rem auto;
     background: var(--secondary-color);
  }
@@ -87,15 +98,15 @@
 }
 @media screen and (max-width: 500px) {
   .project-card-main{
-    padding: 0.1rem 1rem; 
+    padding: 0.9rem 1.5rem; 
     width: 18rem;
-    height: 14rem;
+    height: 12rem;
     margin: 1rem auto;
     background: var(--secondary-color);
  }
   .project_card_content {
-    width: 70%;
-    height: 20rem;
+    width: fit-content;
+    height: fit-content;
     transition: all 0.3s;
   }
 }

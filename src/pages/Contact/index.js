@@ -1,12 +1,11 @@
 import React from "react";
-import "../styles/contact.css";
-import { Footer } from "../components/index";
+import "./contact.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 function Contact() {
   return (
     <div className="contact">
-      <h2 id="heading-title">Contact</h2>
+      <h2 className="section-title">Contact</h2>
       <div>
         <p>You can reach me via email, linkedin and twitter.</p>
         <div className="contact_card_div">
@@ -26,7 +25,6 @@ function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

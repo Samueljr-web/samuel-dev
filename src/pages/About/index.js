@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import "../styles/about.css";
-import "../styles/button.css";
-import { skillsData, ServicesData } from "../data/data";
-import { Footer } from "../components/index";
+import "./about.css";
+import { Button } from "../../components/Button";
+import { skillsData, ServicesData } from "../../data/data";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -35,17 +34,17 @@ function About() {
   }, []);
   return (
     <div className="about">
-      <h2 id="heading-title">About Me</h2>
+      <h2 className="section-title">About Me</h2>
       <div className="about_section">
         <p>
-          Hello, i'm Samuel Adeyemi am a frontend developer with strong passion
-          in programming i have 2years+ of experience i am open for projects and
-          collaboration.
+          I'm a frontend developer with 2years experience in building &
+          maintaining web apps i have great passion in solving problems with
+          code, i take special intrest in optimizing the performance & usability
+          of web applications, I also enjoy programming & tackling intresting
+          software challenges.
         </p>
         <div className="btn-div">
-          <a href="/" className="button">
-            Resume
-          </a>
+          <Button>Resume</Button>
         </div>
       </div>
       <div className="service_section">
@@ -85,7 +84,6 @@ function About() {
           </div>
         </section>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/button.css";
+import { Button } from "../../components/Button";
 
 function NotFound() {
   return (
@@ -13,9 +13,7 @@ function NotFound() {
       <h3>seems you are in a wrong page</h3>
 
       <div style={{ marginTop: "3rem" }}>
-        <a href="/" className="button">
-          Go Home
-        </a>
+        <Button>Go back</Button>
       </div>
     </div>
   );

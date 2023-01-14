@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import "../styles/home.css";
+import "./home.css";
 import { gsap, Power3 } from "gsap";
-import HeroImage from "../assets/Hero-image.png";
+import HeroImage from "../../assets/Hero-image.png";
 
 function Home() {
   const heroImageRef = useRef(null);

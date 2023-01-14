@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { FaEye, FaCode } from "react-icons/fa";
-import { Footer } from "../components/index";
-import { projectsData } from "../data/data";
+import { projectsData } from "../../data/data";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "../styles/projects.css";
+import "./projects.css";
 gsap.registerPlugin(ScrollTrigger);
 
 function Projects() {
@@ -23,7 +22,7 @@ function Projects() {
   });
   return (
     <div className="projects">
-      <h2 id="heading-title">Projects</h2>
+      <h2 className="section-title">Projects</h2>
       <div className="project_card">
         {projectsData.map((p) => {
           return (
@@ -62,7 +61,6 @@ function Projects() {
           );
         })}
       </div>
-      <Footer />
     </div>
   );
 }

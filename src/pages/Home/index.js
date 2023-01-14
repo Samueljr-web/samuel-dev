@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./home.css";
 import { gsap, Power3 } from "gsap";
 import HeroImage from "../../assets/Hero-image.png";
+import HeroImageMobile from "../../assets/hero-image-mobile.png";
 
 function Home() {
   const heroImageRef = useRef(null);
@@ -36,7 +37,8 @@ function Home() {
           </h2>
         </div>
         <div className="hero_image" ref={heroImageRef}>
-          <img src={HeroImage} alt="Samuel" className="img" />
+          <img src={HeroImage} alt="Samuel" className="img hero-desktop" />
+          <img src={HeroImageMobile} alt="Samuel" className="img hero-mobile" />
         </div>
       </div>
     </div>

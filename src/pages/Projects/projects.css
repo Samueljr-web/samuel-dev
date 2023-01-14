@@ -1,5 +1,5 @@
 .projects {
-  padding-top: 5rem;
+  padding: 10rem 8rem;
 }
 .project_card {
   display: grid;
@@ -63,6 +63,9 @@
   margin-left: 5px;
 }
 @media screen and (max-width: 1168px) {
+  .projects {
+    padding: 10rem 2.8rem;
+  }
   .project-card-main {
     padding: 1rem 1rem;
     width: 23rem;
@@ -76,6 +79,9 @@
   }
 }
 @media screen and (max-width: 852px) {
+  .projects {
+    padding: 10rem 2rem;
+  }
   .project-card-main {
     padding: 0.5rem 1rem;
     width: 20rem;
@@ -93,6 +99,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .projects {
+    padding: 5rem 0.5rem;
+  }
   .project-card-main {
     padding: 0.2rem 1.5rem;
     width: 18rem;

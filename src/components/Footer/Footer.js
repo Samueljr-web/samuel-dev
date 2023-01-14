@@ -1,10 +1,7 @@
 import React from "react";
-import {
-  FaGithubSquare,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import Github from "../../assets/social-icons/github.svg";
+import Linkedin from "../../assets/social-icons/linkedin.svg";
+import Twitter from "../../assets/social-icons/twitter.svg";
 import "./footer.css";
 
 function Footer() {
@@ -15,20 +12,11 @@ function Footer() {
         <div className="footer_social_icons">
           <i className="icon">
             <a
-              href="https://twitter.com/Samueljrweb"
+              href="https://linkedin.com/Samueljrweb"
               rel="noreferrer"
               target="_blank"
             >
-              <FaTwitterSquare />
-            </a>
-          </i>
-          <i className="icon">
-            <a
-              href="https://instagram.com/Samueljrweb"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FaInstagramSquare />
+              <img src={Linkedin} alt="linkedin-icon" />
             </a>
           </i>
           <i className="icon">
@@ -37,21 +25,21 @@ function Footer() {
               rel="noreferrer"
               target="_blank"
             >
-              <FaGithubSquare />
+              <img src={Github} alt="github-icon" />
             </a>
           </i>
           <i className="icon">
             <a
-              href="https://linkedin.com/Samueljrweb"
+              href="https://twitter.com/Samueljrweb"
               rel="noreferrer"
               target="_blank"
             >
-              <FaLinkedin />
+              <img src={Twitter} alt="twitter-icon" />
             </a>
           </i>
         </div>
         <div className="copyright">
-          <h4>&copy; Dev samuel, {date}.</h4>
+          <h4>&copy; Samuel AD, {date}.</h4>
         </div>
       </footer>
     </div>

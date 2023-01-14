@@ -82,11 +82,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: 5rem;
   }
   .contact_card span {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .contact_card h2 {
     font-size: 1.1rem;

@@ -1,14 +1,19 @@
 import Debug from "../assets/service-icon.svg";
 import Webdev from "../assets/webdev.png";
 import Deployment from "../assets/deployment.png";
-import Html from "../assets/skillsicon/html.png";
-import Css from "../assets/skillsicon/css.png";
-import Js from "../assets/skillsicon/js.png";
-import Reactjs from "../assets/skillsicon/reactjs.png";
-import Nextjs from "../assets/skillsicon/nextjs.png";
-import Tailwindcss from "../assets/skillsicon/tailwindcss.png";
-import Github from "../assets/skillsicon/github.png";
-import Figma from "../assets/skillsicon/figma.svg";
+import Html from "../assets/skillsicon/html-icon.png";
+import Css from "../assets/skillsicon/css-icon.png";
+import Js from "../assets/skillsicon/javascript-icon.png";
+import Reactjs from "../assets/skillsicon/reactjs-icon.png";
+import Nodejs from "../assets/skillsicon/nodejs-icon.png";
+import Mongodb from "../assets/skillsicon/mongodb-icon.png";
+import Nextjs from "../assets/skillsicon/nextjs-icon.png";
+import Tailwindcss from "../assets/skillsicon/tailwindcss-icon.png";
+import Expressjs from "../assets/skillsicon/expressjs-icon.png";
+import Gsap from "../assets/skillsicon/greensock-icon.png";
+import Scss from "../assets/skillsicon/scss-icon.png";
+import Github from "../assets/skillsicon/git-icon.png";
+import Figma from "../assets/skillsicon/figma-icon.png";
 
 export const projectsData = [
   {
@@ -21,6 +26,32 @@ export const projectsData = [
   },
   {
     id: "2",
+    name: "Meta bnb",
+    description:
+      "A task assigned to me at hngi9 to implement a website that was designed in figma",
+    stack: "Reactjs + Tailwindcss + Aos",
+    link: "https://sh-cv.netlify.app",
+    github: "https://github.com/samueljr-web",
+  },
+  {
+    id: "3",
+    name: "Countdown Timer",
+    description:
+      "A webapp that allows users to create countdowns for thier events fast, easy and quick",
+    stack: "Reactjs + Tailwindcss + Nodejs + Expressjs",
+    link: "https://countdown-app-chi.vercel.app/",
+    github: "https://github.com/samueljr-web",
+  },
+  {
+    id: "4",
+    name: "UTY - Landing page",
+    description: "I created a landing page for a delivery service",
+    stack: "Javacript + Css",
+    link: "https://uty.netlify.app/#",
+    github: "",
+  },
+  {
+    id: "5",
     name: "F.D.M.A",
     description: " This is a school website and my fisrt next.js project.",
     stack: "Nextjs + Tailwindcss + AOS",
@@ -28,7 +59,16 @@ export const projectsData = [
     github: "",
   },
   {
-    id: "3",
+    id: "6",
+    name: "Food City ",
+    description: "A restaurant website",
+    stack: "Reactjs + Css",
+    link: "https://restaurant-website-silk.vercel.app",
+    github: "",
+  },
+
+  {
+    id: "7",
     name: "Twitter Clone",
     description:
       " This was my first Reactjs project/challenge i hopped on, i cloned twitter.",
@@ -37,44 +77,30 @@ export const projectsData = [
     github: "",
   },
   {
-    id: "4",
+    id: "8",
     name: "Todo App",
-    description: "This is a todo app and it was made javascript.",
+    description: "A todo app..",
     stack: "Javacript + Css",
     link: "https://youthful-lumiere-d7d69b.netlify.app/",
     github: "",
   },
+
   {
-    id: "5",
-    name: "UTY - Landing page",
-    description: "I created a landing page for a delivery service",
-    stack: "Javacript + Css",
-    link: "https://uty.netlify.app/#",
-    github: "",
-  },
-  {
-    id: "6",
+    id: "9",
     name: "Personal Website v1",
     description: "This was my former personal/portfolio website.",
     stack: "Reactjs + Css",
     link: "https://devsamuel.vercel.app/",
     github: "",
   },
+
   {
-    id: "7",
-    name: "Food City ",
-    description: "I contributed & Designed the home page of this project",
-    stack: "Reactjs + Css",
-    link: "https://restaurant-website-silk.vercel.app",
-    github: "",
-  },
-  {
-    id: "8",
-    name: "CV ",
-    description: "I Designed a cv with css",
+    id: "10",
+    name: "CV",
+    description: "A cv desgined with css",
     stack: "Reactjs + Css",
     link: "https://sh-cv.netlify.app",
-    github: "",
+    github: "https://github.com/samueljr-web",
   },
 ];
 
@@ -101,46 +127,48 @@ export const skillsData = [
   },
   {
     id: 5,
-    name: "Nextjs",
-    icon: Nextjs,
-  },
-  {
-    id: 6,
     name: "Tailwindcss",
     icon: Tailwindcss,
   },
   {
+    id: 6,
+    name: "Expressjs",
+    icon: Expressjs,
+  },
+  {
     id: 7,
-    name: "Git/Github",
-    icon: Github,
+    name: "Node.js",
+    icon: Nodejs,
   },
   {
     id: 8,
+    name: "Mongodb",
+    icon: Mongodb,
+  },
+  {
+    id: 9,
+    name: "Gsap",
+    icon: Gsap,
+  },
+  {
+    id: 10,
+    name: "Scss",
+    icon: Scss,
+  },
+  {
+    id: 11,
+    name: "Nextjs",
+    icon: Nextjs,
+  },
+
+  {
+    id: 12,
     name: "Figma",
     icon: Figma,
   },
-];
-
-export const ServicesData = [
   {
-    id: 1,
-    name: "Web Development",
-    img: Webdev,
-    description:
-      "I build scalable web applications with aesthetic user interfaces.",
-  },
-  {
-    id: 2,
-    name: "Deployment",
-    img: Deployment,
-    description:
-      "I deploy my projects/websites with  Netlify, Vercel, and Heroku.",
-  },
-  {
-    id: 3,
-    name: "Debugging",
-    img: Debug,
-    description:
-      "This is process of detecting and removing of existing and potential errors in a code that can cause it to behave unexpectedly or crash.",
+    id: 13,
+    name: "Git/Github",
+    icon: Github,
   },
 ];

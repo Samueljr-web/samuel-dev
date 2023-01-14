@@ -1,13 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../styles/home.css";
 import { gsap, Power3 } from "gsap";
-import {
-  FaGithubSquare,
-  FaInstagramSquare,
-  FaLinkedin,
-  FaTwitterSquare,
-} from "react-icons/fa";
-import Me from "../assets/me.jpg";
+import HeroImage from "../assets/Hero-image.png";
 
 function Home() {
   const heroImageRef = useRef(null);
@@ -42,46 +36,8 @@ function Home() {
           </h2>
         </div>
         <div className="hero_image" ref={heroImageRef}>
-          <img src={Me} alt="Samuel" className="img" />
+          <img src={HeroImage} alt="Samuel" className="img" />
         </div>
-      </div>
-      <div className="hero_social_icons">
-        <i className="icon">
-          <a
-            href="https://twitter.com/Samueljrweb"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FaTwitterSquare />
-          </a>
-        </i>
-        <i className="icon">
-          <a
-            href="https://instagram.com/Samueljrweb"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FaInstagramSquare />
-          </a>
-        </i>
-        <i className="icon">
-          <a
-            href="https://github.com/Samueljr-web"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FaGithubSquare />
-          </a>
-        </i>
-        <i className="icon">
-          <a
-            href="https://linkedin.com/Samueljrweb"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FaLinkedin />
-          </a>
-        </i>
       </div>
     </div>
   );

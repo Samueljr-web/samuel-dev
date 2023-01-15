@@ -21,7 +21,7 @@ export const projectsData = [
     name: "Portfolio Website",
     description: "This is the website you are currently viewing",
     stack: "Reactjs + Gsap ",
-    link: "https://adeyemisamuel.com",
+    link: "/",
     github: "",
   },
   {
@@ -30,8 +30,8 @@ export const projectsData = [
     description:
       "A task assigned to me at hngi9 to implement a website that was designed in figma",
     stack: "Reactjs + Tailwindcss + Aos",
-    link: "https://sh-cv.netlify.app",
-    github: "https://github.com/samueljr-web",
+    link: "",
+    github: "https://github.com/samueljr-web/meta-bnb",
   },
   {
     id: "3",
@@ -48,7 +48,7 @@ export const projectsData = [
     description: "I created a landing page for a delivery service",
     stack: "Javacript + Css",
     link: "https://uty.netlify.app/#",
-    github: "",
+    github: "https://github.com/samueljr-web",
   },
   {
     id: "5",

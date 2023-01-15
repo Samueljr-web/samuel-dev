@@ -100,7 +100,7 @@
 }
 @media screen and (max-width: 500px) {
   .projects {
-    padding: 5rem 0.5rem;
+    padding: 10rem 0.5rem;
   }
   .project-card-main {
     padding: 0.2rem 1.5rem;

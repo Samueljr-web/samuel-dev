@@ -57,9 +57,6 @@
   .about_section {
     padding: 0 0.5rem;
   }
-  .about_text {
-    margin: 3rem;
-  }
   .skills {
     display: grid;
     grid-template-columns: repeat(2, 2fr);

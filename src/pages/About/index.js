@@ -12,7 +12,7 @@ function About() {
       opacity: 0,
       duration: 0.8,
       stagger: {
-        each: 0.8,
+        each: 0.5,
       },
       scrollTrigger: {
         trigger: ".skills_card",

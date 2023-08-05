@@ -43,6 +43,15 @@ export const projectsData = [
     github: "https://github.com/samueljr-web",
   },
   {
+    id: "11",
+    name: "Cert go",
+    description:
+      "A webapp that allows users create, share and download amazing single or bulk certificates within split seconds and in any format of your choice",
+    link: "certgo.app",
+    github: "https://github.com/samueljr-web",
+  },
+
+  {
     id: "4",
     name: "UTY - Landing page",
     description: "I created a landing page for a delivery service",

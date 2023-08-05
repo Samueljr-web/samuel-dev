@@ -31,7 +31,7 @@ function Home() {
             <br />
             <p>
               i'm a <span>Frontend Developer</span> currently based in Abuja,
-              Nigeria, i have 2years+ <br />
+              Nigeria, i have 3+years <br />
               experience of building aesthetic user interfaces.
             </p>
           </h2>

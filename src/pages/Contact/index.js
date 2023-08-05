@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { Button } from "../../components/Button";
 
 function Contact() {
-  const handleSubmit = (e) => {
+  const apiUrl = process.env.REACT_APP_APIURL;
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("submit");
+    try {
+      const response = await fetch(`${apiUrl}/send`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactForm),
+      });
+
+      if (response.status === 200) {
+        setContactForm({ name: "", email: "", message: "" });
+        alert("Message sent successfully");
+      }
+    } catch (error) {
+      alert("Error Sending Message");
+      console.log(error);
+    }
   };
   return (
     <div className="contact">
@@ -34,11 +59,43 @@ function Contact() {
 
       <div className="contact-form">
         <form className="form" onSubmit={handleSubmit}>
-          <input type="text" placeholder="Enter your name"></input>
-          <input type="email" placeholder="Enter your email"></input>
-          <textarea placeholder="Write your message here..." />
+          <input
+            type="text"
+            value={contactForm.name}
+            onChange={(e) =>
+              setContactForm({
+                ...contactForm,
+                name: e.target.value,
+              })
+            }
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="email"
+            value={contactForm.email}
+            onChange={(e) =>
+              setContactForm({
+                ...contactForm,
+                email: e.target.value,
+              })
+            }
+            placeholder="Enter your email"
+            required
+          />
+          <textarea
+            value={contactForm.message}
+            onChange={(e) =>
+              setContactForm({
+                ...contactForm,
+                message: e.target.value,
+              })
+            }
+            placeholder="Write your message here..."
+            required
+          />
           <div className="submitbtn-wrapper">
-            <Button type="submit">Shoot</Button>
+            <Button type="submit">Send</Button>
           </div>
         </form>
       </div>

@@ -1,0 +1,123 @@
+.projects {
+  padding: 10rem 8rem;
+}
+.project_card {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  /* gap: 40px; */
+}
+.project-card-main {
+  position: relative;
+  padding: 1rem 2.8rem;
+  width: 23rem;
+  height: 14rem;
+  margin: 1rem auto;
+  background: var(--secondary-color);
+  box-shadow: var(--shadow-md);
+  border-radius: 5px;
+  transition: transform 0.1s ease;
+}
+.project-card-main:hover {
+  transform: scale(1.08);
+  transition: transform 0.1s ease;
+}
+.project_card_content {
+  width: 20rem;
+  height: 18rem;
+  transition: all 0.3s;
+}
+.project_card_content h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.project_card_content h4 {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.project_card_content p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.bottom {
+  position: absolute;
+  bottom: 20px;
+}
+.btn-div {
+  display: flex;
+  margin-top: 0.1rem;
+}
+.btn-div span {
+  margin-right: 1rem;
+}
+.live,
+.code {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.btn-div span a small {
+  margin-left: 5px;
+}
+@media screen and (max-width: 1168px) {
+  .projects {
+    padding: 10rem 2.8rem;
+  }
+  .project-card-main {
+    padding: 1rem 1rem;
+    width: 23rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+  }
+  .project_card_content {
+    width: 20rem;
+    height: 20rem;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 852px) {
+  .projects {
+    padding: 10rem 2rem;
+  }
+  .project-card-main {
+    padding: 0.5rem 1rem;
+    width: 20rem;
+    height: 12rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+  }
+  .project_card {
+    grid-template-columns: 2fr;
+  }
+  .project_card_content {
+    width: 18rem;
+    height: 20rem;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 500px) {
+  .projects {
+    padding: 10rem 0.5rem;
+  }
+  .project-card-main {
+    padding: 0.2rem 1.5rem;
+    width: 18rem;
+    height: 11rem;
+    margin: 1rem auto;
+    background: var(--secondary-color);
+  }
+  .project_card_content {
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.3s;
+  }
+  .project-card-main:hover {
+    transform: scale(1.07);
+  }
+  .bottom {
+    bottom: 10px;
+  }
+}

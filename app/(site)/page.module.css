@@ -1,6 +1,6 @@
 .home {
   padding-top: 8rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .hero_section {
@@ -17,6 +17,11 @@
   transition: 0.5s;
   /* line-height: 50px; */
 }
+.hero_action {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
 .hero_content * {
   text-align: center;
 }
@@ -31,12 +36,13 @@
   text-align: center;
   font-size: 1.1rem;
   transition: 0.5s;
-  margin-top: 10px;
+  margin-top: 6px;
   width: "50px";
 }
 
 .social_icons {
   transition: 0.4;
+  margin-top: 6px;
 }
 .icon * {
   font-size: 2rem;
@@ -78,7 +84,6 @@
 }
 @media screen and (max-width: 853px) {
   .hero_section {
-    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     transition: 0.3s;

@@ -32,6 +32,9 @@ html {
   -webkit-text-stroke: 0.125rem var(--primary-color);
   margin-bottom: 1rem;
 }
+.custom_text {
+  color: #adc7ee;
+}
 .section-title b {
   color: var(--primary-color);
 }

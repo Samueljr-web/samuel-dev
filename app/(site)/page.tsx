@@ -5,6 +5,7 @@ import { gsap, Power3 } from "gsap";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Typewriter from "typewriter-effect";
+import { Button } from "./components/Button";
 
 export default function Home() {
   const heroImageRef = useRef(null);
@@ -31,15 +32,15 @@ export default function Home() {
           <div className={styles.social_icons}>
             <i className={styles.icon}>
               <a
-                href="https://linkedin.com/Samueljrweb"
+                href="https://linkedin.com/in/Samueljrweb"
                 rel="noreferrer"
                 target="_blank"
               >
                 <Image
                   src={"/assets/social-icons/linkedin.svg"}
                   alt="linkedin-icon"
-                  width={30}
-                  height={30}
+                  width={35}
+                  height={35}
                 />
               </a>
             </i>
@@ -52,8 +53,8 @@ export default function Home() {
                 <Image
                   src={"/assets/social-icons/github.svg"}
                   alt="github-icon"
-                  width={30}
-                  height={30}
+                  width={35}
+                  height={35}
                 />
               </a>
             </i>
@@ -66,8 +67,8 @@ export default function Home() {
                 <Image
                   src={"/assets/social-icons/twitter.svg"}
                   alt="twitter-icon"
-                  width={30}
-                  height={30}
+                  width={35}
+                  height={35}
                 />
               </a>
             </i>
@@ -81,13 +82,24 @@ export default function Home() {
                   .deleteAll()
                   .pauseFor(1500)
                   .typeString(
-                    "I'm a frontend engineer with 3+ years experience in building & maintaining web apps"
+                    "I'm a <span class='custom_text'>frontend engineer</span> with 3+ years experience in building & maintaining web apps"
                   )
-                  .start();
+                  .pauseFor(2500) // Pause after typing
+                  .deleteAll() // Delete all text
+                  .pauseFor(1500) // Pause before restarting
+                  .start(); // Start typing animation
+              }}
+              options={{
+                loop: true, // Set loop option to true for continuous typing animation
               }}
             />
           </h2>
         </div>
+      </div>
+      <div className={styles.hero_action}>
+        <Button href="https://drive.google.com/file/d/1A2uMcr6APTTziVbVqchguwgNHhPMhf72/view?usp=drive_link">
+          Resume
+        </Button>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
 import styles from "./contact.module.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import { Button } from "../../components/Button";
+import { Button } from "../components/Button";
 
 function Contact() {
   const apiUrl = process.env.REACT_APP_APIURL;
@@ -33,21 +35,21 @@ function Contact() {
     }
   };
   return (
-    <div className="styles.contact">
+    <div className={styles.contact}>
       <h2 className="section-title">
         Contact <b>Me</b>
       </h2>
       <div>
         <p>You can reach me via email, linkedin and twitter.</p>
-        <div className="styles.contact_card_div">
-          <div className="styles.contact_card">
+        <div className={styles.contact_card_div}>
+          <div className={styles.contact_card}>
             <span>
               <FaPhoneAlt />
             </span>
 
             <h2>+2348145218649</h2>
           </div>
-          <div className="styles.contact_card">
+          <div className={styles.contact_card}>
             <span>
               <FaEnvelope />
             </span>
@@ -57,8 +59,8 @@ function Contact() {
         </div>
       </div>
 
-      <div className="styles.contact-form">
-        <form className="form" onSubmit={handleSubmit}>
+      <div className={styles["contact-form"]}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <input
             type="text"
             value={contactForm.name}
@@ -94,7 +96,7 @@ function Contact() {
             placeholder="Write your message here..."
             required
           />
-          <div className="styles.submitbtn-wrapper">
+          <div className={styles["submitbtn-wrapper"]}>
             <Button type="submit">Send</Button>
           </div>
         </form>

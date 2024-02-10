@@ -17,7 +17,11 @@ html {
   scroll-behavior: smooth;
   background: #ffffff;
   font-family: "Montserrat", sans-serif;
+  background-image: url("/assets/sprinkle.svg");
+  background-position: center 100px;
+  background-repeat: repeat;
 }
+
 .section-title {
   text-align: left;
   text-transform: uppercase;

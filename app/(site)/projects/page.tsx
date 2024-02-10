@@ -1,6 +1,8 @@
+"use client";
+
 import React, { useEffect } from "react";
 import { FaEye, FaCode } from "react-icons/fa";
-import { projectsData } from "../../data/data";
+import { projectsData } from "../../../data/data";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./projects.module.css";
@@ -21,24 +23,24 @@ function Projects() {
     });
   });
   return (
-    <div className="projects">
+    <div className={styles.projects}>
       <h2 className="section-title">Projects</h2>
-      <div className="project_card">
+      <div className={styles.project_card}>
         {projectsData.map((p) => {
           return (
-            <div key={p.id} className="project-card-main">
-              <div className="project_card_content">
+            <div key={p.id} className={styles["project-card-main"]}>
+              <div className={styles.project_card_content}>
                 <h2>{p.name}</h2>
                 <p>{p.description}</p>
-                <div className="bottom">
+                <div className={styles.bottom}>
                   <h4>{p.stack}</h4>
-                  <div className="btn-div">
+                  <div className={styles["btn-div"]}>
                     <span>
                       <a
                         href={p.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="live"
+                        className={styles.live}
                       >
                         <FaEye /> <small>Live</small>
                       </a>
@@ -49,7 +51,7 @@ function Projects() {
                         href={p.github}
                         target="_blank"
                         rel="noreferrer"
-                        className="code"
+                        className={styles.code}
                       >
                         <FaCode /> <small>code</small>
                       </a>

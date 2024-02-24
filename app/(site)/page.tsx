@@ -5,7 +5,7 @@ import { gsap, Power3 } from "gsap";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Typewriter from "typewriter-effect";
-import { Button } from "./components/Button";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   const heroImageRef = useRef(null);

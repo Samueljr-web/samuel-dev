@@ -1,6 +1,6 @@
 "use client";
+import { Button } from "@/components/Button";
 import React, { useEffect } from "react";
-import { Button } from "./components/Button";
 
 interface ErrorProps {
   error: Error & { digest?: string };

@@ -1,4 +1,6 @@
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Samuel Adeyemi - Frontend Engineer",
   description: "",
   icons: {
@@ -18,9 +20,5 @@ export const metadata = {
 };
 
 export default function Home({ children }: { children: React.ReactNode }) {
-  return (
-    <section className="mx-auto text-white w-[97%] tablet:w-[95%] max-w-[1380px]">
-      {children}
-    </section>
-  );
+  return <section className="">{children}</section>;
 }

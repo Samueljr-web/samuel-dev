@@ -1,23 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@600&display=swap");
 * {
   border: 0;
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  color: #000;
 }
-:root {
-  --primary-color: #73a4e4;
-  --secondary-color: #ffffff;
-  --shadow-md: 0px 3px 3px rgba(0, 0, 0, 0.25);
-}
+
 body,
 html {
-  scroll-behavior: smooth;
-  background: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  background: #0a0a0a;
+  color: #acacac;
   background-image: url("/assets/sprinkle.svg");
+  height: 100vh;
   background-position: center 100px;
   background-repeat: repeat;
 }
@@ -26,7 +20,6 @@ html {
   text-align: left;
   text-transform: uppercase;
   font-size: 3rem;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #fff;
   -webkit-text-stroke: 0.125rem var(--primary-color);
@@ -37,45 +30,4 @@ html {
 }
 .section-title b {
   color: var(--primary-color);
-}
-.loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #030d1a;
-}
-.loader1 {
-  width: 50px;
-  height: 50px;
-  background: #6495ed;
-  border-radius: 50px;
-  animation: loader1 1s ease-out infinite;
-  transition: all 0.3s;
-  transform: translateX(-10px);
-}
-.loader2 {
-  width: 50px;
-  height: 50px;
-  right: 5rem;
-  background: #0652df;
-  border-radius: 50px;
-  animation: loader2 1s ease-out infinite;
-  transition: all 0.3s;
-}
-@keyframes loader1 {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(52px);
-  }
-}
-@keyframes loader2 {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-52px);
-  }
 }

@@ -1,4 +1,19 @@
-export const projectsData = [
+interface skillsType {
+  id: number;
+  name: string;
+  icon: string;
+}
+
+interface projectsDataType {
+  id: string;
+  name: string;
+  description: string;
+  stack: string;
+  link: string;
+  github: string;
+}
+
+export const projectsData: projectsDataType[] = [
   {
     id: "1",
     name: "Portfolio Website",
@@ -31,6 +46,7 @@ export const projectsData = [
     description:
       "A webapp that allows users create, share and download amazing single or bulk certificates within split seconds and in any format of your choice",
     link: "certgo.app",
+    stack: "Reactjs, Mongodb, Nodejs, Express Js",
     github: "https://github.com/samueljr-web",
   },
 
@@ -96,71 +112,65 @@ export const projectsData = [
   },
 ];
 
-export const skillsData = [
+export const skillsData: skillsType[] = [
+  {
+    id: 0,
+    name: "Reactjs",
+    icon: "/assets/skillsicon/reactjs.svg",
+  },
   {
     id: 1,
-    name: "Html",
-    icon: "/assets/skillsicon/html-icon.png",
+    name: "Nodejs",
+    icon: "/assets/skillsicon/node.svg",
   },
   {
     id: 2,
-    name: "Css",
-    icon: "/assets/skillsicon/css-icon.png",
+    name: "Gsap",
+    icon: "/assets/skillsicon/gsap.svg",
   },
   {
     id: 3,
-    name: "Javascript",
-    icon: "/assets/skillsicon/javascript-icon.png",
+    name: "Figma",
+    icon: "/assets/skillsicon/figma.svg",
   },
   {
     id: 4,
-    name: "React.js",
-    icon: "/assets/skillsicon/reactjs-icon.png",
+    name: "Tailwindcss",
+    icon: "/assets/skillsicon/tailwindcss.svg",
   },
   {
     id: 5,
-    name: "Tailwindcss",
-    icon: "/assets/skillsicon/tailwindcss-icon.png",
+    name: "Express",
+    icon: "/assets/skillsicon/express.svg",
   },
   {
     id: 6,
-    name: "Expressjs",
-    icon: "/assets/skillsicon/expressjs-icon.png",
+    name: "Git",
+    icon: "/assets/skillsicon/git.svg",
   },
   {
     id: 7,
-    name: "Node.js",
-    icon: "/assets/skillsicon/nodejs-icon.png",
+    name: "Scss",
+    icon: "/assets/skillsicon/scss.svg",
   },
   {
     id: 8,
-    name: "Mongodb",
-    icon: "/assets/skillsicon/mongodb-icon.png",
+    name: "Nextjs",
+    icon: "/assets/skillsicon/nextjs.svg",
   },
   {
     id: 9,
-    name: "Gsap",
-    icon: "/assets/skillsicon/greensock-icon.png",
+    name: "Javascript",
+    icon: "/assets/skillsicon/javascript.svg",
   },
   {
     id: 10,
-    name: "Scss",
-    icon: "/assets/skillsicon/scss-icon.png",
+    name: "Typescript",
+    icon: "/assets/skillsicon/typescript.svg",
   },
   {
     id: 11,
-    name: "Nextjs",
-    icon: "/assets/skillsicon/nextjs-icon.png",
-  },
-
-  {
-    id: 12,
-    name: "Figma",
-    icon: "/assets/skillsicon/figma-icon.png",
-  },
-  {
-    id: 13,
-    name: "Git/Github",
-    icon: "/assets/skillsicon/git-icon.png",
+    name: "MongoDb",
+    icon: "/assets/skillsicon/mongodb.svg",
   },
 ];

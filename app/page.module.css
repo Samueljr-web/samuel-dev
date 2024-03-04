@@ -1,0 +1,67 @@
+.home {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+  margin-top: 15rem;
+  position: sticky;
+  overflow-y: auto;
+}
+
+.intro h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+.intro p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.intro p > span {
+  color: #33a9dc;
+}
+
+.social_icons {
+  transition: 0.4;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.social_icons a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.tools {
+  margin-top: 5rem;
+  color: #ffffff;
+}
+.bricks {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+}
+
+.skill_box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.skill_box h3 {
+  text-transform: uppercase;
+  color: #acacac;
+}
+@media screen and (max-width: 1300px) {
+}
+@media screen and (max-width: 853px) {
+}
+@media screen and (max-width: 768px) {
+}

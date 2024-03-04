@@ -53,6 +53,10 @@
   align-items: center;
   gap: 2rem;
   margin: 1rem;
+  box-shadow: 1px 1px 4px 0px #00000040;
+  background: #ffffff1a;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .skill_box h3 {

@@ -2,21 +2,15 @@ import React from "react";
 
 function Footer() {
   const style: React.CSSProperties = {
-    width: "80%",
-    margin: "0 auto",
+    width: "100%",
+    // margin: "0 auto",
   };
   return (
     <div style={style}>
-      <div
-        style={{
-          display: "flex",
-          height: "2px",
-          background: "#303030",
-        }}
-      ></div>
-      <div style={{ padding: "2rem 0" }}>
+      <hr className="mt-12 border-[#303030]" />
+      <div className="flex items-center justify-center">
         <h2 style={{ fontSize: "12px", textAlign: "left" }}>
-          &copy;2024 Samuel
+          &copy; 2024 Samuel | All Rights Reserved.
         </h2>
       </div>
     </div>

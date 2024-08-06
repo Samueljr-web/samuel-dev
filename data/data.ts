@@ -16,11 +16,11 @@ interface projectsDataType {
 export const projectsData: projectsDataType[] = [
   {
     id: "1",
-    name: "Cert go",
+    name: "Certgo",
     description:
       "A webapp that allows users create, share and download amazing single or bulk certificates within split seconds and in any format of your choice",
     link: "https://certgo.app",
-    stack: ["Reactjs", "Mongodb", "Nodejs", "Expressjs"],
+    stack: ["React", "Mongodb", "Node"],
     github: "https://github.com/samueljr-web",
   },
 
@@ -29,7 +29,7 @@ export const projectsData: projectsDataType[] = [
     name: "Meta bnb",
     description:
       "A task assigned to me at hngi9 to implement a website that was designed in figma",
-    stack: ["Reactjs", "Tailwindcss", "Aos"],
+    stack: ["React", "Tailwind", "Aos"],
     link: "/",
     github: "https://github.com/samueljr-web/meta-bnb",
   },
@@ -38,7 +38,7 @@ export const projectsData: projectsDataType[] = [
     name: "Lets countdown",
     description:
       "A webapp that allows users to create countdowns for thier events fast, easy and quick",
-    stack: ["Reactjs", "Tailwindcss", "Nodejs", "Expressjs"],
+    stack: ["React", "Tailwind", "Node"],
     link: "https://countdown-app-chi.vercel.app/",
     github: "https://github.com/samueljr-web",
   },

@@ -12,7 +12,7 @@ export default function Skills() {
           {skillsData.slice(0, 3).map((skill) => (
             <div
               key={skill.id}
-              className="flex w-[170px] h-11 p-2 m-4 gap-7 items-center bg-[#ffffff1a] rounded-[10px]"
+              className="flex w-[170px] h-11 p-2 m-4 gap-7 items-center bg-[#ffffff1a] "
             >
               <Image src={skill.icon} alt="" width={30} height={30} />
               <h3>{skill.name}</h3>
@@ -23,7 +23,7 @@ export default function Skills() {
           {skillsData.slice(3, 7).map((skill) => (
             <div
               key={skill.id}
-              className="flex w-[170px] h-11 items-center  gap-7 m-4 p-2 bg-[#ffffff1a] rounded-[10px]"
+              className="flex w-[170px] h-11 items-center  gap-7 m-4 p-2 bg-[#ffffff1a] "
             >
               <Image src={skill.icon} alt="" width={30} height={30} />
               <h3>{skill.name}</h3>
@@ -34,7 +34,7 @@ export default function Skills() {
           {skillsData.slice(7, 10).map((skill) => (
             <div
               key={skill.id}
-              className="flex w-[170px] h-11 items-center  p-2 m-4 gap-7 bg-[#ffffff1a] rounded-[10px] "
+              className="flex w-[170px] h-11 items-center  p-2 m-4 gap-7 bg-[#ffffff1a]  "
             >
               <Image src={skill.icon} alt="" width={30} height={30} />
               <h3>{skill.name}</h3>
@@ -45,7 +45,7 @@ export default function Skills() {
           {skillsData.slice(10, 11).map((skill) => (
             <div
               key={skill.id}
-              className="flex w-[170px] h-11 items-center  gap-7 m-4 p-2 bg-[#ffffff1a] rounded-[10px] "
+              className="flex w-[170px] h-11 items-center  gap-7 m-4 p-2 bg-[#ffffff1a]  "
             >
               <Image src={skill.icon} alt="" width={30} height={20} />
               <h3>{skill.name}</h3>

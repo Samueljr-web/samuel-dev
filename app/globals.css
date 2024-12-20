@@ -36,3 +36,17 @@ body {
 .section-title b {
   color: var(--primary-color);
 }
+
+.birthday-background {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

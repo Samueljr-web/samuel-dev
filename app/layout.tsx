@@ -9,8 +9,49 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Samuel Adeyemi - Frontend Engineer",
-  description: "Samuel Adeyemi",
+  title: "Samuel Adeyemi | Frontend Software Engineer",
+  description:
+    "Frontend Engineer with 4+ years of experience building performant, user-friendly web applications. Skilled in React, Next.js, Node.js and more.",
+  keywords:
+    "Samuel Adeyemi, Frontend Developer in nigeria, Frontend developer, Hire a frontend developer,  Frontend Engineer, Software Engineer, React, Next.js, Node.js, JavaScript, TypeScript",
+  authors: [
+    {
+      name: "Samuel Adeyemi",
+      url: "https://www.linkedin.com/in/samueljrweb",
+    },
+  ],
+  creator: "Samuel Adeyemi",
+  publisher: "Samuel Adeyemi",
+  openGraph: {
+    title: "Samuel Adeyemi | Frontend Software Engineer",
+    description:
+      "Frontend Engineer with 4+ years of experience building performant, user-friendly web applications. Skilled in React, Next.js, Node.js and more.",
+    url: "https://www.samueladeyemi.me",
+    siteName: "Samuel Adeyemi Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Samuel Adeyemi | Frontend Software Engineer",
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Samuel Adeyemi | Frontend Software Engineer",
+    description:
+      "Frontend Engineer with 4+ years of experience building performant, user-friendly web applications. Skilled in React, Next.js, Node.js and more.",
+    images: ["/og-image.png"],
+    creator: "@samueljrweb",
+  },
+  appleWebApp: {
+    title: "Samuel Adeyemi | Frontend Software Engineer",
+    statusBarStyle: "default",
+    capable: true,
+  },
   icons: {
     icon: [
       {

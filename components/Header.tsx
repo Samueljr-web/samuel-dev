@@ -25,7 +25,7 @@ export default function Header() {
     {
       id: 2,
       icon: FaLinkedinIn,
-      href: "",
+      href: "https://www.linkedin.com/in/samueljrweb",
     },
     {
       id: 3,

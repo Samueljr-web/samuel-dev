@@ -11,35 +11,17 @@
 @tailwind utilities;
 
 body {
-  scroll-behavior: smooth;
-  background: #0a0a0a;
+  background-color: #0a0a0a;
   color: #acacac;
-  background-image: url("/assets/sprinkle.svg");
-  height: 100vh;
-  background-position: center 100px;
-  background-repeat: repeat;
-  @apply fixed top-0 left-0 w-full h-full bg-cover bg-center z-[-1];
 }
-
 .section-title {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #fff;
-  -webkit-text-stroke: 0.125rem var(--primary-color);
-  margin-bottom: 1rem;
+  text-transform: lowercase;
 }
-.custom_text {
-  color: #adc7ee;
-}
-.section-title b {
-  color: var(--primary-color);
-}
-
-.birthday-background {
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-  animation: fadeIn 2s ease-in-out;
+.section-title ::before {
+  content: "~/";
+  display: block;
+  display: inline-flex;
+  color: #33a9dc;
 }
 
 @keyframes fadeIn {

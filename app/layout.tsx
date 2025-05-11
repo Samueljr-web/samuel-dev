@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const fira = Fira_Code({
   weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  style: ["normal"],
   subsets: ["latin"],
 });
 
@@ -75,7 +75,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={fira.className}>{children}</body>
     </html>
   );
 }

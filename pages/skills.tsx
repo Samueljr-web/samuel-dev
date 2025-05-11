@@ -11,7 +11,7 @@ export default function Skills() {
       <h2 className="section-title mb-4 font-medium text-2xl text-white">
         <b></b>skills
       </h2>
-      <div className="hidden lg:flex flex-col items-center">
+      <div className="hidden md:flex flex-col items-center">
         <div className="flex">
           {skillsData.slice(0, 3).map((skill) => (
             <div

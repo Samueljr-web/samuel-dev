@@ -1,98 +1,68 @@
 "use client";
 
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, useRef, useEffect } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Skills from "@/pages/skills";
 import Projects from "@/pages/projects";
-import Confetti from "react-confetti";
-
-const BirthdayModal = ({ onClose }: { onClose: () => void }) => {
-  return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
-      onClick={onClose}
-    >
-      <div
-        className="relative bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center transform scale-100 hover:scale-105 transition-transform duration-300"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex justify-center">
-          <div className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-full p-4 shadow-lg">
-            🎉
-          </div>
-        </div>
-
-        <h1 className="mt-4 md:text-3xl text-2xl font-extrabold text-gray-800 mb-2">
-          It&apos;s Samuel&apos;s Birthday!
-        </h1>
-        <p className="text-gray-600 text-sm md:text-base">
-          Let’s celebrate this special day with joy and happiness!
-        </p>
-      </div>
-    </div>
-  );
-};
+import SideSocial from "@/components/sidesocial";
+import Image from "next/image";
+import Contacts from "@/pages/contacts";
+// import { ReactLenis, useLenis } from "lenis/react";
+import gsap from "gsap";
 
 export default function Home() {
-  const [isBirthday, setIsBirthday] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [showConfetti, setShowConfetti] = useState(false);
+  // const lenisRef = useRef<any>(null);
 
-  useLayoutEffect(() => {
-    const today = new Date();
-    if (today.getMonth() === 11 && today.getDate() === 20) {
-      setIsBirthday(true);
-      setShowModal(true);
-      setShowConfetti(true);
-    }
-  }, []);
-
-  const handleClose = () => {
-    setShowModal(false);
-    setShowConfetti(false);
-    setIsBirthday(false);
-  };
+  // useLayoutEffect(() => {
+  //   if (lenisRef.current && lenisRef.current?.lenis) {
+  //     lenisRef.current?.lenis?.scrollTo(0, { duration: 0 });
+  //   }
+  // }, []);
 
   return (
-    <div
-      className={`h-screen overflow-hidden ${
-        isBirthday ? "birthday-background" : ""
-      }`}
-    >
-      {showConfetti && (
-        <Confetti
-          colors={["#ff0000", "#00ff00", "#0000ff", "#ffffff", "#ffff00"]}
-        />
-      )}
-
-      <main className="relative py-4 px-5 md:px-2 h-full overflow-y-auto">
-        <Header />
-        {showModal && <BirthdayModal onClose={handleClose} />}
-        <div className="mt-14 container max-w-3xl mx-auto">
-          <div>
-            <h2 className="text-[#ACACAC] text-[22px] md:text-[30px] font-medium">
+    <>
+      <Header />
+      <SideSocial />
+      {/* <ReactLenis ref={lenisRef}> */}
+      <main className="py-4 px-3 md:px-2">
+        <div className="mt-28 container max-w-3xl mx-auto">
+          <div className="relative">
+            <h2 className="text-[#ACACAC] text-[20px] md:text-[30px] font-medium">
               Hi! I&apos;m Samuel
             </h2>
-            <p className="font-medium">
+            <p className="font-medium md:text-[20px] text-[16px] md:w-[750px] w-full">
               I&apos;m a{" "}
               <span className="text-[#33A9DC]">frontend engineer</span> with 4+
               years experience in building & maintaining web apps. I have great
-              passion in <span>solving problems</span> with code. I take special
-              interest in optimizing the performance & usability of web
-              applications. I also enjoy programming & tackling interesting
-              software challenges.
+              passion in{" "}
+              <span className="text-[#33A9DC] ">solving problems</span> with
+              code. I take special interest in optimizing the performance &
+              usability of web applications. I also enjoy programming & tackling
+              interesting software challenges.
             </p>
+            <div className="hidden md:block absolute -z-10 top-6 -left-14">
+              <Image
+                src="/assets/hero-line.svg"
+                alt=""
+                width={250}
+                height={250}
+              />
+            </div>
           </div>
-          <section className="mt-5">
+          <section className="mt-[270px]">
             <Skills />
           </section>
-          <section className="mt-5">
+          <section className="mt-[270px]">
             <Projects />
+          </section>
+          <section className="mt-[270px]">
+            <Contacts />
           </section>
         </div>
         <Footer />
       </main>
-    </div>
+      {/* </ReactLenis> */}
+    </>
   );
 }

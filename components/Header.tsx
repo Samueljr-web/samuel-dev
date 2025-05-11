@@ -1,54 +1,19 @@
+"use client";
+
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
+import { IoIosDocument } from "react-icons/io";
 
 export default function Header() {
-  interface IconType {
-    id: number;
-    icon: React.ComponentType;
-    href: string;
-  }
-
-  const icons: IconType[] = [
-    {
-      id: 0,
-      icon: FaGithub,
-      href: "https://github.com/Samueljr-web",
-    },
-
-    {
-      id: 1,
-      icon: FaXTwitter,
-      href: "https://x.com/Samueljrweb",
-    },
-    {
-      id: 2,
-      icon: FaLinkedinIn,
-      href: "https://www.linkedin.com/in/samueljrweb",
-    },
-    {
-      id: 3,
-      icon: MdEmail,
-      href: "mailto:samueladeyemi.me@gmail.com",
-    },
-  ];
-
   return (
-    <>
-      <div className="flex gap-2 float-right">
-        {icons.map((icon) => (
-          <a
-            href={icon.href}
-            className="text-2xl"
-            target="_blank"
-            key={icon.id}
-          >
-            <icon.icon />
-          </a>
-        ))}
+    <div className="container max-w-3xl md:mx-auto mt-4">
+      <div className="flex  mx-3">
+        <h2 className="text-white text-2xl">AD/&gt;</h2>
+        <button className="ml-auto border border-[#ffffff1a] md:text-lg text-sm  text-white p-2 flex items-center gap-2">
+          <IoIosDocument className="text-[#33A9DC]" /> View Resume
+        </button>
       </div>
+
       {/* <hr className="mt-12 border-[#303030]" /> */}
-    </>
+    </div>
   );
 }

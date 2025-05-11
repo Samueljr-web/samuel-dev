@@ -16,6 +16,15 @@ interface projectsDataType {
 export const projectsData: projectsDataType[] = [
   {
     id: "1",
+    name: "Tunu.io",
+    description:
+      "A digital wellness platform providing personalized recovery plans for individuals facing substance use and behavioral addictions. Features include self-assessments, virtual therapy, medication management, and access to rehabilitation services, all designed to offer accessible and judgment-free care.",
+    stack: ["Next", "Zustand", "Tailwind"],
+    link: "https://tunu.io",
+    github: "https://github.com/samueljr-web/",
+  },
+  {
+    id: "2",
     name: "Certgo",
     description:
       "A webapp that allows users create, share and download amazing single or bulk certificates within split seconds and in any format of your choice",
@@ -24,15 +33,6 @@ export const projectsData: projectsDataType[] = [
     github: "https://github.com/samueljr-web",
   },
 
-  {
-    id: "2",
-    name: "Meta bnb",
-    description:
-      "A task assigned to me at hngi9 to implement a website that was designed in figma",
-    stack: ["React", "Tailwind", "Aos"],
-    link: "/",
-    github: "https://github.com/samueljr-web/meta-bnb",
-  },
   {
     id: "3",
     name: "Lets countdown",

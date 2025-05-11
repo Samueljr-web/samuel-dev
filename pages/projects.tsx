@@ -1,3 +1,5 @@
+"use client";
+
 import { projectsData } from "@/data/data";
 import Image from "next/image";
 import React from "react";
@@ -5,10 +7,12 @@ import React from "react";
 export default function Projects() {
   return (
     <div>
-      <h2 className="font-medium text-2xl text-white">Featured projects</h2>
+      <h2 className="section-title font-medium text-2xl text-white">
+        <b></b>Featured projects
+      </h2>
 
       {projectsData.map((project: any) => (
-        <div key={project} className="mt-4 space-y-2">
+        <div key={project.id} className="mt-4 space-y-2">
           <h2 className="text-white font-medium text-[1rem] md:text-[1.3rem]">
             {project.name}
           </h2>

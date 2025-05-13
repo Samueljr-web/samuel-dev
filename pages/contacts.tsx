@@ -41,9 +41,8 @@ function Contacts() {
 
       <div className="flex md:flex-row flex-col justify-between mt-4 ">
         <h2>
-          {" "}
-          I’m interested in freelance opportunities. However, if you have other
-          request or question, don’t hesitate to contact me
+          I&apos;m open to freelance, contract, and full-time opportunities.
+          Feel free to reach out with any questions or requests.
         </h2>
         <div className="md:mt-0 mt-4 md:w-fit w-full h-fit p-2 border border-[#ffffff1a]">
           <div className="flex flex-col gap-4 p-4">

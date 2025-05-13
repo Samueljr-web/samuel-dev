@@ -50,13 +50,13 @@ export default function Home() {
               />
             </div>
           </div>
-          <section className="mt-[270px]">
+          <section className="md:mt-[270px] mt-[100px]">
             <Skills />
           </section>
-          <section className="mt-[270px]">
+          <section className="md:mt-[270px] mt-[100px]">
             <Projects />
           </section>
-          <section className="mt-[270px]">
+          <section className="md:mt-[270px] mt-[100px]">
             <Contacts />
           </section>
         </div>

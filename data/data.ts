@@ -39,7 +39,7 @@ export const projectsData: projectsDataType[] = [
     description:
       "A webapp that allows users to create countdowns for thier events fast, easy and quick",
     stack: ["React", "Tailwind", "Node"],
-    link: "https://countdown-app-chi.vercel.app/",
+    link: "https://lets-countdown.vercel.app/",
     github: "https://github.com/samueljr-web",
   },
 ];

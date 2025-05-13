@@ -45,7 +45,7 @@ function Contacts() {
           I’m interested in freelance opportunities. However, if you have other
           request or question, don’t hesitate to contact me
         </h2>
-        <div className="w-fit h-fit p-2 border border-[#ffffff1a]">
+        <div className="md:mt-0 mt-4 md:w-fit w-full h-fit p-2 border border-[#ffffff1a]">
           <div className="flex flex-col gap-4 p-4">
             {icons.map((icon) => (
               <a

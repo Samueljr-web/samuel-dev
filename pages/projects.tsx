@@ -1,18 +1,47 @@
 "use client";
 
 import { projectsData } from "@/data/data";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
+  const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    projectRefs.current.forEach((ref, index) => {
+      if (ref) {
+        gsap.from(ref, {
+          opacity: 0,
+          x: 50,
+          duration: 1.2,
+          delay: 0.6 + index * 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ref,
+            start: "top 80%",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
+      }
+    });
+  }, []);
+
   return (
     <div>
       <h2 className="section-title font-medium text-2xl text-white">
         <b></b>Featured projects
       </h2>
 
-      {projectsData.map((project: any) => (
-        <div key={project.id} className="mt-4 space-y-2">
+      {projectsData.map((project: any, index: number) => (
+        <div
+          ref={(el) => (projectRefs.current[index] = el)}
+          key={project.id}
+          className="mt-4 space-y-2"
+        >
           <h2 className="text-white font-medium text-[1rem] md:text-[1.3rem]">
             {project.name}
           </h2>
@@ -30,18 +59,22 @@ export default function Projects() {
             </div>
 
             <div className="flex gap-1 md:gap-2">
-              <a href={project.link} target="_blank">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/assets/external-link.svg"
-                  alt=""
+                  alt="External link"
                   width={20}
                   height={20}
                 />
               </a>
-              <a href={project.github} target="_blank">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/assets/github-line.svg"
-                  alt=""
+                  alt="GitHub"
                   width={20}
                   height={20}
                 />

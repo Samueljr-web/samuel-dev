@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useLayoutEffect, useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Skills from "@/pages/skills";
@@ -8,39 +8,62 @@ import Projects from "@/pages/projects";
 import SideSocial from "@/components/sidesocial";
 import Image from "next/image";
 import Contacts from "@/pages/contacts";
-// import { ReactLenis, useLenis } from "lenis/react";
 import gsap from "gsap";
-import Lenis from "lenis";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  // const lenisRef = useRef<any>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const paraRef = useRef<HTMLParagraphElement>(null);
+  const geoLineRef = useRef<HTMLImageElement>(null);
 
-  // useLayoutEffect(() => {
-  //   // Initialize a new Lenis instance for smooth scrolling
-  //   const lenis = new Lenis();
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(geoLineRef.current, {
+        opacity: 0,
+        x: -100,
+        duration: 1.2,
+        delay: 0.6,
+        scale: 0.9,
+        ease: "power3.out",
+      });
+      gsap.from(headingRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power3.out",
+      });
+      gsap.from(paraRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.3,
+        ease: "power3.out",
+      });
+    }, heroRef);
 
-  //   lenis.on("scroll", ScrollTrigger.update);
-
-  //   gsap.ticker.add((time) => {
-  //     lenis.raf(time * 1000);
-  //   });
-
-  //   gsap.ticker.lagSmoothing(0);
-  // }, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <>
       <Header />
       <SideSocial />
-      {/* <ReactLenis ref={lenisRef}> */}
       <main className="py-4 px-3 md:px-2">
         <div className="mt-28 container max-w-3xl mx-auto">
-          <div className="relative">
-            <h2 className="text-[#ACACAC] text-[20px] md:text-[30px] font-medium">
+          <div className="relative" ref={heroRef}>
+            <h2
+              ref={headingRef}
+              className="text-[#ACACAC] text-[20px] md:text-[30px] font-medium"
+            >
               Hi! I&apos;m Samuel
             </h2>
-            <p className="font-medium md:text-[20px] text-[16px] md:w-[750px] w-full">
+            <p
+              ref={paraRef}
+              className="font-medium md:text-[20px] text-[16px] md:w-[750px] w-full"
+            >
               I&apos;m a{" "}
               <span className="text-[#33A9DC]">frontend engineer</span> with 4+
               years experience in building & maintaining web apps. I have great
@@ -52,6 +75,8 @@ export default function Home() {
             </p>
             <div className="hidden md:block absolute -z-10 top-6 -left-14">
               <Image
+                ref={geoLineRef}
+                id="geoline"
                 src="/assets/hero-line.svg"
                 alt=""
                 width={250}
@@ -59,6 +84,7 @@ export default function Home() {
               />
             </div>
           </div>
+
           <section className="md:mt-[270px] mt-[100px]">
             <Skills />
           </section>
@@ -71,7 +97,6 @@ export default function Home() {
         </div>
         <Footer />
       </main>
-      {/* </ReactLenis> */}
     </>
   );
 }

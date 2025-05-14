@@ -2,10 +2,8 @@
 
 import { projectsData } from "@/data/data";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -59,22 +57,18 @@ export default function Projects() {
             </div>
 
             <div className="flex gap-1 md:gap-2">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a href={project.link} target="_blank">
                 <Image
                   src="/assets/external-link.svg"
-                  alt="External link"
+                  alt=""
                   width={20}
                   height={20}
                 />
               </a>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={project.github} target="_blank">
                 <Image
                   src="/assets/github-line.svg"
-                  alt="GitHub"
+                  alt=""
                   width={20}
                   height={20}
                 />

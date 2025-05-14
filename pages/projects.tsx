@@ -13,7 +13,7 @@ export default function Projects() {
       if (ref) {
         gsap.from(ref, {
           opacity: 0,
-          x: 50,
+          y: 50,
           duration: 1.2,
           delay: 0.6 + index * 0.2,
           ease: "power3.out",

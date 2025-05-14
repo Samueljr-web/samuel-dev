@@ -5,8 +5,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-gsap.registerPlugin(ScrollTrigger);
 
+gsap.registerPlugin(ScrollTrigger);
 export default function Projects() {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
 

@@ -6,12 +6,11 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Skills() {
   const skillRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.from(skillRefs.current, {
         scrollTrigger: {

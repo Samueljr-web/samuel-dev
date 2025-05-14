@@ -11,8 +11,6 @@ import Contacts from "@/pages/contacts";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -20,6 +18,7 @@ export default function Home() {
   const geoLineRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     console.log("GSAP useEffect ran");
     const ctx = gsap.context(() => {
       gsap.from(geoLineRef.current, {

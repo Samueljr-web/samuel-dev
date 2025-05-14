@@ -20,6 +20,7 @@ export default function Home() {
   const geoLineRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
+    console.log("GSAP useEffect ran");
     const ctx = gsap.context(() => {
       gsap.from(geoLineRef.current, {
         opacity: 0,

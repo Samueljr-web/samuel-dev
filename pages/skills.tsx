@@ -40,7 +40,9 @@ export default function Skills() {
           {skillsData.slice(0, 3).map((skill, i) => (
             <div
               key={skill.id}
-              ref={(el) => el && skillRefs.current.push(el)}
+              ref={(el) => {
+                el && skillRefs.current.push(el);
+              }}
               className="flex w-[170px] h-11 p-2 m-4 gap-4 items-center border border-[#ffffff1a]"
             >
               <Image src={skill.icon} alt="" width={30} height={30} />
@@ -52,7 +54,9 @@ export default function Skills() {
           {skillsData.slice(3, 7).map((skill) => (
             <div
               key={skill.id}
-              ref={(el) => el && skillRefs.current.push(el)}
+              ref={(el) => {
+                el && skillRefs.current.push(el);
+              }}
               className="flex w-[170px] h-11 items-center gap-4 m-4 p-2 border border-[#ffffff1a]"
             >
               <Image src={skill.icon} alt="" width={30} height={30} />
@@ -64,7 +68,9 @@ export default function Skills() {
           {skillsData.slice(7, 10).map((skill) => (
             <div
               key={skill.id}
-              ref={(el) => el && skillRefs.current.push(el)}
+              ref={(el) => {
+                el && skillRefs.current.push(el);
+              }}
               className="flex w-[170px] h-11 items-center p-2 m-4 gap-4 border border-[#ffffff1a]"
             >
               <Image src={skill.icon} alt="" width={30} height={30} />
@@ -76,7 +82,9 @@ export default function Skills() {
           {skillsData.slice(10, 12).map((skill) => (
             <div
               key={skill.id}
-              ref={(el) => el && skillRefs.current.push(el)}
+              ref={(el) => {
+                el && skillRefs.current.push(el);
+              }}
               className="flex w-[170px] h-11 items-center gap-4 m-4 p-2 border border-[#ffffff1a]"
             >
               <Image src={skill.icon} alt="" width={30} height={20} />

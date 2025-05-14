@@ -36,7 +36,9 @@ export default function Projects() {
 
       {projectsData.map((project: any, index: number) => (
         <div
-          ref={(el) => (projectRefs.current[index] = el)}
+          ref={(el) => {
+            projectRefs.current[index] = el;
+          }}
           key={project.id}
           className="mt-4 space-y-2"
         >

@@ -10,14 +10,23 @@ import Image from "next/image";
 import Contacts from "@/pages/contacts";
 // import { ReactLenis, useLenis } from "lenis/react";
 import gsap from "gsap";
+import Lenis from "lenis";
+import { ScrollTrigger } from "gsap/all";
 
 export default function Home() {
   // const lenisRef = useRef<any>(null);
 
   // useLayoutEffect(() => {
-  //   if (lenisRef.current && lenisRef.current?.lenis) {
-  //     lenisRef.current?.lenis?.scrollTo(0, { duration: 0 });
-  //   }
+  //   // Initialize a new Lenis instance for smooth scrolling
+  //   const lenis = new Lenis();
+
+  //   lenis.on("scroll", ScrollTrigger.update);
+
+  //   gsap.ticker.add((time) => {
+  //     lenis.raf(time * 1000);
+  //   });
+
+  //   gsap.ticker.lagSmoothing(0);
   // }, []);
 
   return (

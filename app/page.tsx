@@ -85,7 +85,7 @@ export default function Home() {
               />
             </div>
           </div>
-          {/* 
+
           <section className="md:mt-[270px] mt-[100px]">
             <Skills />
           </section>
@@ -94,7 +94,7 @@ export default function Home() {
           </section>
           <section className="md:mt-[270px] mt-[100px]">
             <Contacts />
-          </section> */}
+          </section>
         </div>
         <Footer />
       </main>

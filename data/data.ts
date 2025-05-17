@@ -4,7 +4,7 @@ interface skillsType {
   icon: string;
 }
 
-interface projectsDataType {
+export interface projectsDataType {
   id: string;
   name: string;
   description: string;
@@ -53,7 +53,7 @@ export const projectsData: projectsDataType[] = [
       "A webapp that allows users to create countdowns for thier events fast, easy and quick",
     stack: ["React", "Tailwind", "Node"],
     link: "https://lets-countdown.vercel.app/",
-    github: "https://github.com/samueljr-web",
+    github: "https://github.com/Samueljr-web/countdown-app",
   },
 ];
 

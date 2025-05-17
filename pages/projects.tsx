@@ -1,6 +1,6 @@
 "use client";
 
-import { projectsData } from "@/data/data";
+import { projectsData, projectsDataType } from "@/data/data";
 import gsap from "gsap";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
@@ -34,51 +34,63 @@ export default function Projects() {
         <b></b>Featured projects
       </h2>
 
-      {projectsData.map((project: any, index: number) => (
-        <div
-          ref={(el) => {
-            projectRefs.current[index] = el;
-          }}
-          key={project.id}
-          className="mt-4 space-y-2"
-        >
-          <h2 className="text-white font-medium text-[1rem] md:text-[1.3rem]">
-            {project.name}
-          </h2>
-          <p className="text-[.9rem] md:text-[1rem]">{project.description}</p>
-          <div className="flex justify-between">
-            <div>
-              {project.stack.map((tech: string, index: number) => (
-                <span
-                  key={index}
-                  className="w-auto lowercase bg-[#ffffff1a] h-[32px] px-2 py-1 mr-1 md:mr-2 "
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+      {projectsData.map((project: projectsDataType, index: number) => {
+        const { id, name, stack, link, github, isPrivate, description } =
+          project;
 
-            <div className="flex gap-1 md:gap-2">
-              <a href={project.link} target="_blank">
-                <Image
-                  src="/assets/external-link.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                />
-              </a>
-              <a href={project.github} target="_blank">
-                <Image
-                  src="/assets/github-line.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                />
-              </a>
+        return (
+          <div
+            ref={(el) => {
+              projectRefs.current[index] = el;
+            }}
+            key={id}
+            className="mt-4 space-y-2"
+          >
+            <h2 className="text-white font-medium text-[1rem] md:text-[1.3rem]">
+              {name}
+            </h2>
+            <p className="text-[.9rem] md:text-[1rem]">{description}</p>
+            <div className="flex justify-between">
+              <div>
+                {stack.map((tech: string, techIndex: number) => (
+                  <span
+                    key={techIndex}
+                    className="w-auto lowercase bg-[#ffffff1a] h-[32px] px-2 py-1 mr-1 md:mr-2"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-1 md:gap-2">
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/assets/external-link.svg"
+                    alt="External Link"
+                    width={20}
+                    height={20}
+                  />
+                </a>
+                <a
+                  href={isPrivate ? undefined : github}
+                  aria-disabled={isPrivate}
+                  target={isPrivate ? undefined : "_blank"}
+                  rel={isPrivate ? undefined : "noopener noreferrer"}
+                  title={isPrivate ? "Private Project" : "View on GitHub"}
+                  className={isPrivate ? " cursor-default text-gray-400" : ""}
+                >
+                  <Image
+                    src="/assets/github-line.svg"
+                    alt="GitHub Link"
+                    width={20}
+                    height={20}
+                  />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

@@ -11,6 +11,7 @@ interface projectsDataType {
   stack: string[];
   link: string;
   github: string;
+  isPrivate?: boolean;
 }
 
 export const projectsData: projectsDataType[] = [
@@ -19,9 +20,10 @@ export const projectsData: projectsDataType[] = [
     name: "Tunu.io",
     description:
       "A digital wellness platform providing personalized recovery plans for individuals facing substance use and behavioral addictions. Features include self-assessments, virtual therapy, medication management, and access to rehabilitation services, all designed to offer accessible and judgment-free care.",
-    stack: ["Next", "Zustand", "Tailwind"],
+    stack: ["Next", "forms", "Tailwind"],
     link: "https://tunu.io",
     github: "https://github.com/samueljr-web/",
+    isPrivate: true,
   },
   {
     id: "2",
@@ -31,10 +33,21 @@ export const projectsData: projectsDataType[] = [
     link: "https://certgo.app",
     stack: ["React", "Mongodb", "Node"],
     github: "https://github.com/samueljr-web",
+    isPrivate: true,
+  },
+  {
+    id: "3",
+    name: "QRConnect",
+    description:
+      "QR Connect is a smart platform designed to modernize business operations through QR technology. It empowers businesses to deliver instant, contactless access to product details, and support, all through a simple scan—enhancing customer experience and operational efficiency.",
+    link: "https://qrconect.com",
+    stack: ["React", "next", "materialui", "redux"],
+    github: "https://github.com/samueljr-web",
+    isPrivate: true,
   },
 
   {
-    id: "3",
+    id: "4",
     name: "Lets countdown",
     description:
       "A webapp that allows users to create countdowns for thier events fast, easy and quick",

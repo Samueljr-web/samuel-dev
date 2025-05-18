@@ -5,19 +5,24 @@ import { IoIosDocument } from "react-icons/io";
 
 export default function Header() {
   return (
-    <div className="container max-w-3xl md:mx-auto mt-4">
-      <div className="flex  mx-3">
-        <h2 className="text-white text-2xl">AD/&gt;</h2>
+    <div className="w-full fixed top-0 left-0 bg-[#0d0d0d] z-50">
+      <div className="container max-w-3xl mx-auto flex items-center justify-between px-3 pt-6 pb-2">
+        <a
+          href="/"
+          className="px-2 py-1 border border-[#ffffff1a] text-white text-xl"
+        >
+          &gt;_samuel
+        </a>
         <a
           href="https://drive.google.com/file/d/1-C-nd_8IMJJXZf8jwrdcYFwYaLQmgJeb/view?usp=drive_link"
           target="_blank"
-          className="flex items-center ml-auto border border-[#ffffff1a] md:text-lg text-sm  text-white p-2  gap-2"
+          rel="noopener noreferrer"
+          className="flex items-center border border-[#ffffff1a] md:text-lg text-sm text-white px-2 py-1 gap-2"
         >
-          <IoIosDocument className="text-[#33A9DC]" /> View Resume
+          <IoIosDocument className="text-[#33A9DC]" />
+          View Resume
         </a>
       </div>
-
-      {/* <hr className="mt-12 border-[#303030]" /> */}
     </div>
   );
 }

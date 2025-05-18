@@ -5,7 +5,7 @@ import { IoIosDocument } from "react-icons/io";
 
 export default function Header() {
   return (
-    <div className="w-full fixed top-0 left-0 bg-[#0d0d0d] z-50">
+    <div className="w-full  top-0 left-0 bg-[#0d0d0d] z-50">
       <div className="container max-w-3xl mx-auto flex items-center justify-between px-3 pt-6 pb-2">
         <a
           href="/"

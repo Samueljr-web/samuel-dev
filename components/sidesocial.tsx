@@ -41,7 +41,7 @@ function SideSocial() {
         {icons.map((icon) => (
           <a
             href={icon.href}
-            className="text-2xl text-[#AAB2BF]"
+            className="text-2xl text-[#AAB2BF] hover:text-[#ffffff] transition-all"
             target="_blank"
             key={icon.id}
           >

@@ -17,7 +17,7 @@ export default function Header() {
           href="https://drive.google.com/file/d/1KFq8aKcGPCpe-HxCcEnAjj_tYEer5tN6/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center border border-[#ffffff1a] md:text-lg text-sm text-white px-2 py-1 gap-2"
+          className="flex items-center border border-[#ffffff1a] md:text-lg text-sm text-white px-2 md:py-1 py-2 gap-2"
         >
           <IoIosDocument className="text-[#33A9DC]" />
           View Resume

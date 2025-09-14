@@ -1,6 +1,6 @@
 "use client";
 
-import { projectsData, projectsDataType } from "@/data/data";
+import { projectsData } from "@/data/data";
 import gsap from "gsap";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
@@ -34,7 +34,7 @@ export default function Projects() {
         <b></b>Featured projects
       </h2>
 
-      {projectsData.map((project: projectsDataType, index: number) => {
+      {projectsData.map((project, index: number) => {
         const { id, name, stack, link, github, isPrivate, description } =
           project;
 

@@ -40,7 +40,7 @@ export const projectsData: projectsDataType[] = [
     name: "QRConnect",
     description:
       "QR Connect is a smart platform designed to modernize business operations through QR technology. It empowers businesses to deliver instant, contactless access to product details, and support, all through a simple scan—enhancing customer experience and operational efficiency.",
-    link: "https://qrconect.com",
+    link: "https://qrsupports.com/",
     stack: ["React", "next", "materialui", "redux"],
     github: "https://github.com/samueljr-web",
     isPrivate: true,

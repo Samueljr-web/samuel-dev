@@ -8,8 +8,8 @@ import Image from "next/image";
 import Contacts from "@/pages/contacts";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);

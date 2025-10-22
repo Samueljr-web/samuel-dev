@@ -19,7 +19,6 @@ export default function Home() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    console.log("GSAP useEffect ran");
     const ctx = gsap.context(() => {
       gsap.from(geoLineRef.current, {
         opacity: 0,

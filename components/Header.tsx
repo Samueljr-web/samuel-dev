@@ -14,7 +14,7 @@ export default function Header() {
           &gt;_samuel
         </a>
         <a
-          href="https://drive.google.com/file/d/1KFq8aKcGPCpe-HxCcEnAjj_tYEer5tN6/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1zI2SG_PJiSTJFczsyzsI8hoaxA7sXwpR/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center border border-[#ffffff1a] md:text-lg text-sm text-white px-2 md:py-1 py-2 gap-2"

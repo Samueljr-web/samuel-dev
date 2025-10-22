@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Skills from "@/pages/skills";
 import Projects from "@/pages/projects";
 import SideSocial from "@/components/sidesocial";
@@ -10,6 +8,8 @@ import Image from "next/image";
 import Contacts from "@/pages/contacts";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);

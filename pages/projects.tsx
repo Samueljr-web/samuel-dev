@@ -1,6 +1,6 @@
 "use client";
 
-import { projectsData } from "@/data/data";
+import { projectsData } from "@/constants/constant-data";
 import gsap from "gsap";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";

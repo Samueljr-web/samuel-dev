@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Samuel Adeyemi | Frontend Software Engineer",
     description:
       "Frontend Engineer with 4+ years of experience building performant, user-friendly web applications. Skilled in React, Next.js, Node.js and more.",
-    url: "https://www.samueladeyemi.me",
+    url: "https://www.samueladeyemi.tech",
     siteName: "Samuel Adeyemi Portfolio",
     images: [
       {
@@ -66,6 +66,9 @@ export const metadata: Metadata = {
         href: "/favicon.png",
       },
     ],
+  },
+  verification: {
+    google: "zM4cdKlfbz0u2CWqg0-KuvmLuvsi8qmQBKcZfVzIy18",
   },
 };
 

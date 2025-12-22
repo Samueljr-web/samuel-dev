@@ -35,12 +35,13 @@ export default function Skills() {
         <b></b>skills
       </h2>
       <div className="hidden md:flex flex-col items-center">
+        {/* Row 1: 3 skills */}
         <div className="flex">
           {skillsData.slice(0, 3).map((skill, i) => (
             <div
               key={skill.id}
               ref={(el) => {
-                el && skillRefs.current.push(el);
+                if (el) skillRefs.current[i] = el;
               }}
               className="flex w-[170px] h-11 p-2 m-4 gap-4 items-center border border-[#ffffff1a]"
             >
@@ -49,12 +50,13 @@ export default function Skills() {
             </div>
           ))}
         </div>
+        {/* Row 2: 4 skills */}
         <div className="flex">
-          {skillsData.slice(3, 7).map((skill) => (
+          {skillsData.slice(3, 7).map((skill, i) => (
             <div
               key={skill.id}
               ref={(el) => {
-                el && skillRefs.current.push(el);
+                if (el) skillRefs.current[3 + i] = el;
               }}
               className="flex w-[170px] h-11 items-center gap-4 m-4 p-2 border border-[#ffffff1a]"
             >
@@ -63,12 +65,13 @@ export default function Skills() {
             </div>
           ))}
         </div>
+        {/* Row 3: 4 skills */}
         <div className="flex">
-          {skillsData.slice(7, 10).map((skill) => (
+          {skillsData.slice(7, 11).map((skill, i) => (
             <div
               key={skill.id}
               ref={(el) => {
-                el && skillRefs.current.push(el);
+                if (el) skillRefs.current[7 + i] = el;
               }}
               className="flex w-[170px] h-11 items-center p-2 m-4 gap-4 border border-[#ffffff1a]"
             >
@@ -77,34 +80,37 @@ export default function Skills() {
             </div>
           ))}
         </div>
+        {/* Row 4: 3 skills */}
         <div className="flex">
-          {skillsData.slice(10, 12).map((skill) => (
+          {skillsData.slice(11, 14).map((skill, i) => (
             <div
               key={skill.id}
               ref={(el) => {
-                el && skillRefs.current.push(el);
+                if (el) skillRefs.current[11 + i] = el;
               }}
               className="flex w-[170px] h-11 items-center gap-4 m-4 p-2 border border-[#ffffff1a]"
             >
-              <Image src={skill.icon} alt="" width={30} height={20} />
+              <Image src={skill.icon} alt="" width={30} height={30} />
               <h3 className="uppercase">{skill.name}</h3>
             </div>
           ))}
         </div>
       </div>
-      <section>
-        <div className="md:hidden grid gap-4 grid-cols-2 justify-items-center">
-          {skillsData.map((skill) => (
-            <div
-              key={skill.id}
-              className="flex w-[160px] h-11 items-center gap-4 p-2 border border-[#ffffff1a]"
-            >
-              <Image src={skill.icon} alt="" width={24} height={24} />
-              <h3>{skill.name}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Mobile Grid */}
+      <div className="md:hidden grid gap-3 grid-cols-2">
+        {skillsData.map((skill, i) => (
+          <div
+            key={skill.id}
+            ref={(el) => {
+              if (el) skillRefs.current[i] = el;
+            }}
+            className="flex h-11 items-center gap-3 p-2 border border-[#ffffff1a]"
+          >
+            <Image src={skill.icon} alt="" width={24} height={24} />
+            <h3 className="uppercase text-sm truncate">{skill.name}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

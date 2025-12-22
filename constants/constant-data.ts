@@ -12,6 +12,7 @@ export interface projectsDataType {
   link: string;
   github: string;
   isPrivate?: boolean;
+  image?: string;
 }
 
 export const projectsData: projectsDataType[] = [
@@ -21,9 +22,10 @@ export const projectsData: projectsDataType[] = [
     description:
       "A digital wellness platform providing personalized recovery plans for individuals facing substance use and behavioral addictions. Features include self-assessments, virtual therapy, medication management, and access to rehabilitation services, all designed to offer accessible and judgment-free care.",
     stack: ["Next", "forms", "Tailwind"],
-    link: "https://tunu.io",
+    link: "https://tunuapp.vercel.app/",
     github: "https://github.com/samueljr-web/",
     isPrivate: true,
+    image: "/assets/projects/tunu.png",
   },
   {
     id: "2",
@@ -34,6 +36,7 @@ export const projectsData: projectsDataType[] = [
     stack: ["React", "Mongodb", "Node"],
     github: "https://github.com/samueljr-web",
     isPrivate: true,
+    image: "/assets/projects/certgo.png",
   },
   {
     id: "3",
@@ -44,16 +47,19 @@ export const projectsData: projectsDataType[] = [
     stack: ["React", "next", "materialui", "redux"],
     github: "https://github.com/samueljr-web",
     isPrivate: true,
+    image: "/assets/projects/qrconnect.png",
   },
 
   {
     id: "4",
-    name: "Lets countdown",
+    name: "Kalon",
     description:
-      "A webapp that allows users to create countdowns for thier events fast, easy and quick",
-    stack: ["React", "Tailwind", "Node"],
-    link: "https://lets-countdown.vercel.app/",
-    github: "https://github.com/Samueljr-web/countdown-app",
+      "A strategic branding and growth agency that helps ambitious executives build influential personal brands and growth-driven businesses generate qualified leads through perception management and performance advertising.",
+    stack: ["Next.js", "NextAPI", "Resend", "Shadcn"],
+    link: "https://kalon-website.vercel.app/",
+    isPrivate: true,
+    github: "https://github.com/Samueljr-web/",
+    image: "/assets/projects/kalon.png",
   },
 ];
 
@@ -117,5 +123,15 @@ export const skillsData: skillsType[] = [
     id: 11,
     name: "MongoDb",
     icon: "/assets/skillsicon/mongodb.svg",
+  },
+  {
+    id: 12,
+    name: "SocketIO",
+    icon: "/assets/skillsicon/socketio.svg",
+  },
+  {
+    id: 13,
+    name: "Firebase",
+    icon: "/assets/skillsicon/firebase.svg",
   },
 ];

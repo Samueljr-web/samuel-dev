@@ -135,3 +135,6 @@ export const skillsData: skillsType[] = [
     icon: "/assets/skillsicon/firebase.svg",
   },
 ];
+
+export const RESUME_URL =
+  "https://drive.google.com/file/d/1XJSzWN36lO6nxs8IEyoFWh1R261ywff4/view?usp=sharing";
